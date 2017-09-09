@@ -1,0 +1,85 @@
+{
+    "title": "Candidate",
+    "description": "List of Candidates",
+    "pageType": "view",
+    "sendIdWithCreate": true,
+    "urlFields": [
+        "_id"
+    ],
+    "fields": [
+        {
+            "name": "Full Name",
+            "isSort": "",
+            "tableRef": "fullname"
+        },
+        {
+            "name": "Email Id",
+            "isSort": "",
+            "tableRef": "email_id"
+        },
+        {
+            "name": "Contact No",
+            "isSort": "",
+            "tableRef": "contact_no"
+        },
+        {
+            "name": "Message/Query",
+            "isSort": "",
+            "tableRef": "message"
+        }
+    ],
+    "action": [
+        {
+            "name": "edit",
+            "icon": "fa-pencil",
+            "buttonClass": "btn-primary",
+            "type": "page",
+            "action": "editCandidate",
+            "fieldsToSend": {
+                "_id": "_id"
+            }
+        },
+        {
+            "name": "delete",
+            "icon": "fa-trash",
+            "buttonClass": "btn-danger",
+            "type": "apiCallConfirm",
+            "title": "Delete Candidate",
+            "content": "Are you sure you want to delete Candidate?",
+            "api": "Candidate/delete",
+            "fieldsToSend": {
+                "name": "_id",
+                "value": "_id"
+            }
+        }
+    ],
+    "button": [
+        {
+            "name": "Excel Export",
+            "icon": "print",
+            "class": "btn-danger",
+            "type": "redirect",
+            "action": "Candidate/generateExcel",
+            "linkType": "admin"
+        },
+        {
+            "name": "Upload Excel",
+            "icon": "delete",
+            "class": "btn-warning",
+            "type": "redirect",
+            "action": "excel-upload/Candidate",
+            "linkType": "internal"
+        },
+        {
+            "name": "Create",
+            "icon": "plus",
+            "class": "btn-success",
+            "type": "page",
+            "action": "createCandidate"
+        }
+    ],
+    "apiCall": {
+        "url": "Candidate/search",
+        "params": "_id"
+    }
+}

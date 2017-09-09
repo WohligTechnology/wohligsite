@@ -1,0 +1,94 @@
+{
+    "title": "Edit Candidate",
+    "name": "User",
+    "jsonPage": "viewCandidate",
+    "desciption": "",
+    "pageType": "edit",
+    "urlFields": [
+        "_id"
+    ],
+    "fields": [
+        {
+            "name": "Fullname",
+            "type": "text",
+            "tableRef": "fullname",
+            "placeholder": "Enter fullname",
+            "id": "fullname",
+            "validation": [
+                "required",
+                "trim",
+                "unique"
+            ],
+            "url": ""
+        },
+        {
+            "name": "Email_id",
+            "type": "text",
+            "tableRef": "email_id",
+            "placeholder": "Enter email_id",
+            "id": "email_id",
+            "validation": [
+                "",
+                "trim",
+                "unique"
+            ],
+            "url": ""
+        },
+        {
+            "name": "Contact_no",
+            "type": "text",
+            "tableRef": "contact_no",
+            "placeholder": "Enter contact_no",
+            "id": "contact_no",
+            "validation": [
+                "required",
+                "trim",
+                "unique"
+            ],
+            "url": ""
+        },
+        {
+            "name": "Message",
+            "type": "text",
+            "tableRef": "message",
+            "placeholder": "Enter message",
+            "id": "message",
+            "validation": [
+                "required",
+                "trim",
+                "unique"
+            ],
+            "url": ""
+        }
+    ],
+    "action": [
+        {
+            "name": "submit",
+            "action": "submitCandidate",
+            "stateName": {
+                "page": "page",
+                "json": {
+                    "id": "viewCandidate"
+                }
+            }
+        },
+        {
+            "name": "cancel",
+            "sideMenuRedirect": true,
+            "stateName": {
+                "page": "page",
+                "json": {
+                    "id": "viewCandidate"
+                }
+            }
+        }
+    ],
+    "apiCall": {
+        "url": "Candidate/save",
+        "params": "_id"
+    },
+    "preApi": {
+        "url": "Candidate/getOne",
+        "params": "_id"
+    }
+}
