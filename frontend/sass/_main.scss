@@ -119,3 +119,111 @@ header {
 .nav-up {
     transform: translateY(-100%);
 }
+
+.img1
+{
+  width:130px;
+  height:60px;
+margin-left:60px;
+padding-top:10px;
+margin-bottom:15px;
+
+}
+.details
+{
+    background-color: #00b0c7;
+    text-align:left;
+    padding:20px 20px 30px 70px;
+    color:white;
+
+}
+form{
+  
+    background-color:#f9f9f9;
+
+}
+div.container
+{ 
+    
+ 
+    margin-left: 100px;
+   
+    margin-right: 100px;    
+    padding-left:180px; 
+    padding-right:180px; 
+}
+.column
+{
+    background-color: #00b0c7;
+    padding-left:41px;
+    padding-top:22px;
+    color:white;
+    text-align:left;
+}
+
+.ggl
+{
+    font-size:12px;
+    padding-right:1px;
+    color:#00b0c7;
+}
+.frm
+{
+    padding-left:42px;
+    font-style:15px;
+}
+.inp
+{
+    border:none;
+     padding-right: 40px;
+}
+.bmain
+{
+    border-radius:40px;
+    width:31px;
+    height: 31px;
+    background-color:white;
+}
+.img-wrapper 
+{
+    position:relative;
+}
+.bi h6{
+    position: absolute;
+    top:50%;
+    right:50%;
+    transform:translate(50%,50%);    
+        font-size: 30px;
+        color:white;
+display: inline;
+
+}
+
+a{
+    color:black;
+}
+.submit
+{
+   color:white;
+   background-color: #00b0c7;
+   font-size:20px;
+    margin-left: 465px;
+}
+.phn
+{
+    border-radius:40px;
+    width:31px;
+    height: 31px;
+    background-color:#ececec;
+}
+.icon
+{
+    font-size:18px;
+    color:black;
+}
+.inf
+{
+    background-color: #ececec;
+    padding-left: 50px;
+              padding-top: 30px;
+}

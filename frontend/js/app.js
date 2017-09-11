@@ -34,7 +34,15 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             url: "/grid",
             templateUrl: tempateURL,
             controller: 'GridCtrl'
+        })
+
+        .state('getintouch', {
+            url: "/getintouch",
+            templateUrl: tempateURL,
+            controller: 'GetInTouchCtrl'
         });
+
+        
     $urlRouterProvider.otherwise("/");
     $locationProvider.html5Mode(isproduction);
 });
