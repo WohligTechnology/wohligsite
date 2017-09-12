@@ -54,9 +54,15 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         TemplateService.title = "getintouch"; // This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
     })
+    .controller('GetInTouchCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+        $scope.template = TemplateService.getHTML("content/getintouch.html");
+        TemplateService.title = "getintouch"; // This is the Title of the Website
+        $scope.navigation = NavigationService.getNavigation();
+    })
+    
     
     // Example API Controller
-    .controller('DemoAPICtrl', function ($scope, TemplateService, apiService, NavigationService, $timeout) {
+    .controller('ApplyCtrl', function ($scope, TemplateService, apiService, NavigationService, $timeout) {
         apiService.getDemo($scope.formData, function (data) {
             console.log(data);
         });

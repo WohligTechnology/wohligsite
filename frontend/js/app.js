@@ -40,6 +40,12 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             url: "/getintouch",
             templateUrl: tempateURL,
             controller: 'GetInTouchCtrl'
+        })
+        
+         .state('apply', {
+            url: "/apply",
+            templateUrl: tempateURL,
+            controller: 'ApplyCtrl'
         });
 
         
