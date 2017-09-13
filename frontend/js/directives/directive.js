@@ -77,7 +77,74 @@ myApp.directive('img', function ($compile, $parse) {
         };
     })
 
+//upload
+.directive('uploadImage', function ($http, $filter) {
+    return {
+        templateUrl: 'views/directive/upload.html',
+        scope: {
+            model: '=ngModel',
+            callback: "=ngCallback"
+        },
+        link: function ($scope, element, attrs) {
+            $scope.isMultiple = false;
+            $scope.inObject = false;
+            if (attrs.multiple || attrs.multiple === "") {
+                $scope.isMultiple = true;
+                $("#inputImage").attr("multiple", "ADD");
+            }
+            if (attrs.noView || attrs.noView === "") {
+                $scope.noShow = true;
+            }
+            if ($scope.model) {
+                if (_.isArray($scope.model)) {
+                    $scope.image = [];
+                    _.each($scope.model, function (n) {
+                        $scope.image.push({
+                            url: $filter("uploadpath")(n)
+                        });
+                    });
+                }
 
+            }
+            if (attrs.inobj || attrs.inobj === "") {
+                $scope.inObject = true;
+            }
+            $scope.clearOld = function () {
+                $scope.model = [];
+            };
+            $scope.uploadNow = function (image) {
+                var Template = this;
+                image.hide = true;
+                var formData = new FormData();
+                formData.append('file', image.file, image.name);
+                $http.post(uploadurl, formData, {
+                    headers: {
+                        'Content-Type': undefined
+                    },
+                    transformRequest: angular.identity
+                }).success(function (data) {
+                    console.log("success");
+                    if ($scope.callback) {
+                        $scope.callback(data);
+                    } else {
+                        if ($scope.isMultiple) {
+                            if ($scope.inObject) {
+                                $scope.model.push({
+                                    "image": data.data[0]
+                                });
+                            } else {
+                                $scope.model.push(data.data[0]);
+                            }
+                        } else {
+                            $scope.model = data.data[0];
+                        }
+                    }
+                });
+            };
+        }
+    };
+})
+//end upload
     .directive('replace', function () {
         return {
             require: 'ngModel',
