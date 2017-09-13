@@ -45,7 +45,7 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
          .state('apply', {
             url: "/apply",
             templateUrl: tempateURL,
-            controller: 'ApplyCtrl'
+            controller: 'Applyctrl'
         });
 
         

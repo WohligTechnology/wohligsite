@@ -9412,7 +9412,7 @@ a {
 .gm-style .place-card-large {
   display: none !important; }
 
-.row {
+.page_row {
   box-shadow: 2px 2px 8px -3px; }
 
 .Details_Container {
@@ -9437,6 +9437,12 @@ a {
 
 .line_page {
   padding-top: 30px; }
+
+.form_container {
+  padding-left: 0px; }
+
+.abtyou {
+  background-color: white; }
 
 #fancybox-loading,
 .fancybox-close,
