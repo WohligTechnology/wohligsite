@@ -54,7 +54,7 @@
             "placeholder": "Enter message",
             "id": "message",
             "validation": [
-                "required",
+                "",
                 "trim",
                 "unique"
             ],
