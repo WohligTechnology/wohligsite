@@ -83,16 +83,28 @@
         },
         {
             "name": "Experience",
-            "type": "text",
+            "type": "tags",
             "tableRef": "experience",
-            "placeholder": "Enter experience",
-            "id": "experience",
+            "placeholder": "Enter Experience",
+            "id": "status",
             "validation": [
-                "",
+                "required",
                 "trim",
-                "unique"
+                ""
             ],
-            "url": ""
+            "url": "",
+            "dropDownField": "",
+            "dropDownType": "single",
+            "onView": true,
+            "dropDown": [
+                "Fresher",
+                "less than 1 year",
+                "1-2 years",
+                "2-3 years",
+                "3-4 years",
+                "4-5 years",
+                "more than 5 years"
+            ]
         },
         {
             "name": "Notice_period",
@@ -103,7 +115,7 @@
             "validation": [
                 "",
                 "trim",
-                "unique"
+                ""
             ],
             "url": ""
         },
@@ -116,7 +128,7 @@
             "validation": [
                 "",
                 "trim",
-                "unique"
+                ""
             ],
             "url": ""
         },
@@ -129,7 +141,7 @@
             "validation": [
                 "",
                 "trim",
-                "unique"
+                ""
             ],
             "url": ""
         },
@@ -139,7 +151,6 @@
             "tableRef": "resume",
             "placeholder": "Upload resume",
             "id": "resume",
-            "view": true,
             "disabled": true,
             "validation": [
                 "required",
