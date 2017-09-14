@@ -55,7 +55,7 @@ var controller = {
 
     saveMailData: function (req, res) {
         if (req.body) {
-            Expert.saveMailData(req.body, res.callback);
+            Candidate.saveMailData(req.body, res.callback);
         } else {
             res.json({
                 value: false,

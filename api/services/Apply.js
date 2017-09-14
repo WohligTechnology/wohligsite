@@ -13,7 +13,7 @@ var schema = new Schema({
         type: String,
         validate: validators.isEmail(),
         excel: "User Email",
-        unique: true
+
     },
     mobile: {
         type: String,
@@ -177,6 +177,66 @@ var model = {
                 }
             });
         }
+    },
+
+    saveMailData: function (data, callback) {
+        async.waterfall([
+            function (cbWaterfall) {
+                Apply.saveData(data, function (err, complete) {
+                    if (err) {
+                        cbWaterfall(err, null);
+                    } else {
+                        if (_.isEmpty(complete)) {
+                            cbWaterfall(null, []);
+                        } else {
+                            console.log("complete", complete);
+                            cbWaterfall(null, complete);
+                        }
+                    }
+                });
+            },
+            function (complete, cbWaterfall1) {
+                var emailData = {};
+                console.log("data: ", data);
+                emailData.firstname = data.firstname;
+                emailData.lastname = data.lastname;
+                emailData.mobile = data.mobile;
+                emailData.designation = data.designation;
+                emailData.experience = data.experience;
+                emailData.notice = data.notice_period;
+                emailData.current = data.current_ctc;
+                emailData.expected = data.expected_ctc;
+                emailData.resume = data.resume;
+                emailData.email = "sayali.ghule@wohlig.com";
+                emailData.from = data.email;
+                emailData.filename = "mail2.ejs";
+                emailData.subject = "User apply Details";
+                console.log("emaildata", emailData);
+
+                Config.email(emailData, function (err, emailRespo) {
+                    if (err) {
+                        console.log(err);
+                        cbWaterfall1(null, err);
+                    } else if (emailRespo) {
+                        cbWaterfall1(null, emailRespo);
+                    } else {
+                        cbWaterfall1(null, "Invalid data");
+                    }
+                });
+            },
+        ],
+            function (err, data2) {
+                if (err) {
+                    console.log(err);
+                    callback(null, []);
+                } else if (data2) {
+                    if (_.isEmpty(data2)) {
+                        callback(null, []);
+                    } else {
+                        callback(null, data2);
+                    }
+                }
+            });
     }
 };
 module.exports = _.assign(module.exports, exports, model);
