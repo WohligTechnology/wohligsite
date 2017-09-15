@@ -58,6 +58,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         $scope.template = TemplateService.getHTML("content/apply.html");
         TemplateService.title = "apply"; // This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
+
     })
     
     

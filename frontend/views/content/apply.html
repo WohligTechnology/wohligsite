@@ -16,31 +16,42 @@
                <label for="current opening" class="text_tab1">CURRENT OPENING</label>
             </div>
         </uib-tab-heading>
-        <div class="container">
 
 
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"></a></h4>
+        <div class="container ">
+             <div class="row">
+                 <div class="col-md-offset-2 col-md-8 color-form">
+                      <div class="space_current_page" role="tablist" class="panel-group">
+
+             <div class="panel panel-default">
+                   <div role="tab"  aria-selected="true" class="panel-heading heading_color"  aria-selected="true" class="panel-heading" ng-keypress="toggleOpen($event)">
+                     
+                         <h4 class="panel-title">
+                             <div class="display-inline"><h4 class="text-up font-bold color-blue ng-binding"><b>Developer</b>
+                        <i class="pull-right fa fa-plus"></i>
+                            </h4>    </div>  </h4> </div>
+                            <!--<div role="tab" id="accordiongroup-1305-1963-tab" aria-selected="true" class="panel-heading" ng-keypress="toggleOpen($event)">
+    <h4 class="panel-title">
+      <a role="button" data-toggle="collapse" href="" aria-expanded="true" aria-controls="accordiongroup-1305-1963-panel" tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+          <span uib-accordion-header="" ng-class="{'text-muted': isDisabled}" class="ng-binding"><h4 class="ng-scope"><span class="uppercase bold ng-binding">Branding Solution</span> <i class="pull-right fa fa-minus" ng-class="{'fa-minus': status.open1, 'fa-plus': !status.open1}" style=""></i></h4></span></a>
+    </h4>
+  </div>-->
+                            <div id="accordiongroup-1305-1963-panel" aria-labelledby="accordiongroup-1305-1963-tab" aria-hidden="false" role="tabpanel" class="panel-collapse in collapse" uib-collapse="!isOpen" aria-expanded="true" style="height: auto;">
+    <div class="panel-body" ng-transclude=""><uib-accordion-heading class="ng-scope"></uib-accordion-heading><div ng-bind-html="data.content" class="ng-binding ng-scope">We bring a brand-centric approach to sport and entertainment marketing, thanks to our potent combination of strategists, negotiators, creative, digital
+experts and project managers. Using our proprietary,
+strategic model, we consider all relevant business and
+brand factors to guide our clients through property,
+investment, activation and analytics decisions.</div></div>
+  </div>
+
+                      
+                 </div>
+             </div>
         </div>
-        <div class="collapse1" class="panel-collapse collapse in">
-            <div class="panel-body">
-                <p> 2-5 Years</p>
-                <p>Sion,Mumbai</p>
-                <p> As per industry standards</p>
-
-                Job Description 1.Work clodely with ux designers and Developers for design hand offs. 2.Get objective design feedback and
-                iterate. 3.Join a team of weird hard - workers, to build an awesome product. 4. You have a portfolio demonstrating
-                strong web and mobile interface projects. 5. You have 2-3 years of experience with responsive design. 6.
-                You have strong UI sensibilities. Desired Candidate Profile education- UG: B.Tech/B.E, BCA,B.sc PG: M.Tech,MCA
-
-
-
-
-
-            </div>
         </div>
         </div>
-
-        </div>
+   
+<!--end designer-->
 
 
 
@@ -183,17 +194,17 @@
 
                 <div class="row">
                     <!--starting of first form-->
-                    <div class="form-group">
+                    <div class="form-group row_padding">
                         <div class="col-md-12">
                       <div class="column_space13">
                                 <label for="fullname" class="col-md-3  control-label color_text_upload">Upload Resume/cv:</label>
                                 
-                                    <div class="form-group">
+                                    
                                         <div class="attach">
                                             <upload-image ng-model="formData.qualificationCertificate" no-view></upload-image>
                                     
                                     
-                                </div>
+                             
                       </div>
 
 
@@ -209,7 +220,7 @@
 
                 <div class="row padding_buttom">
                     <div class="col-md-12 text-center">
-                        <input type="submit" class="btn btn-default button_submit">
+                        <input type="submit" class=" btn-default button_submit">
                     </div>
                 </div>
             </form>

@@ -41,6 +41,7 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'GetInTouchCtrl'
         })
+
         
          .state('apply', {
             url: "/apply",
