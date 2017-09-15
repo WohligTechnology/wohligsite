@@ -1,182 +1,220 @@
 <div class="draw_image_background">
-    <img src="img/11.jpg"  alt="background_img" width="100%" height="250px">
-</div>
-<!--<div class="tab_form">
-  <ul>
-       
-  <li><img src="img/12.png"></a></li>
-  <li><img src="img/13.png"></a></li>
-</ul>
-  -->  
-
-<div class="container form_container">
-<div class="row padd_top">
-    <div class="col-md-2">
-    </div>
-    <div class="col-md-8 column_space">
-         <div class="form-group">
-         <label class="control-label" for="aboutyou">About you</label>
-    </div></div>
-    <div class="col-md-2">
-    </div>
+    <img src="img/11.jpg" alt="background_img" width="100%" height="250px">
 </div>
 
-<div class="row ">
-  <!--starting of first form-->
-    <div class="col-md-2">
-    </div> 
-        <div class="col-md-4 column_space">
-            <form>
-  <div class="form-group">
-    <input type="text" class="form-control input-md" id="firstname" placeholder="First Name">
-  </div><!--form-group-->
-            
+
+<!--<div class="tab" style="background-color:#f6f6f6">
+  <button class="tablinks" onclick="openCity(event, '1')" style="border:none;background: none;margin-left:350px"><img src="img/opening.png" ></button>
+  <button class="tablinks" onclick="openCity(event, '2')" style="border:none;background: none;margin-left:170px"><img src="img/apply.png"></button>
+</div>-->
+
+<uib-tabset active="active">
+    <uib-tab>
+        <uib-tab-heading class="color_tab">
+            <img src="img/opening.png" class="img_width">
+            <div>
+               <label for="current opening" class="text_tab1">CURRENT OPENING</label>
+            </div>
+        </uib-tab-heading>
+        <div class="container">
+
+
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"></a></h4>
         </div>
-           <div class="col-md-4 column_space2">
-               
-                <input type="text" class="form-control" id="lastname" placeholder="Last Name">
-                 
-    
+        <div class="collapse1" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <p> 2-5 Years</p>
+                <p>Sion,Mumbai</p>
+                <p> As per industry standards</p>
+
+                Job Description 1.Work clodely with ux designers and Developers for design hand offs. 2.Get objective design feedback and
+                iterate. 3.Join a team of weird hard - workers, to build an awesome product. 4. You have a portfolio demonstrating
+                strong web and mobile interface projects. 5. You have 2-3 years of experience with responsive design. 6.
+                You have strong UI sensibilities. Desired Candidate Profile education- UG: B.Tech/B.E, BCA,B.sc PG: M.Tech,MCA
+
+
+
+
+
+            </div>
         </div>
-         <div class="col-md-2">
-    </div></div>
-    <!--ending of first form-->
-
-
-<div class="row addi_inf">
-  <!--starting of first form-->
-    <div class="col-md-2">
-    </div>
-        <div class="col-md-4 column_space">
-            <form>
-  <div class="form-group">
-    <input type="email" class="form-control input-md" id="email" placeholder="Email">
-  </div><!--form-group-->
-      </div>
-            </form>
-    
-           <div class="col-md-4 column_space2">
-               
-                <input type="Phone Number" class="form-control" id="phonenumber" placeholder="Phone Number">
-                 
-    
         </div>
-         <div class="col-md-2">
-    </div>
-    <!--ending of first form-->
 
-    
+        </div>
 
 
-</div><!--row-->
-<div class="row">
-    <div class="col-md-2">
-    </div>
-    <div class="col-md-8 column_space">
-          <div class="form-group">
-         <label class="control-label" for="aboutyou">Addition Information</label>
-    </div></div>
-    <div class="col-md-2">
-    </div>
-</div>
-<div class="row">
-  <!--starting of first form-->
-    <div class="col-md-2">
-    </div>
-        <div class="col-md-8 column_space">
+
+    </uib-tab>
+    <uib-tab>
+        <uib-tab-heading>
+            <img src="img/apply.png" class="img_width">
+            <div>
+            <label for="apply"  class="text_tab2">APPLY NOW</label>
+            </div>
+
+        </uib-tab-heading>
+        <div class="container form_container">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
             <form>
-  <div class="form-group">
+                <div class="row padd_top">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="control-label" for="aboutyou">About you</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--starting of first form-->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control input-md" id="firstname" placeholder="First Name">
+                        </div>
+                        <!--form-group-->
+
+                    </div>
+                    <div class="col-md-6">
+
+                        <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+
+
+                    </div>
+                </div>
+
+
+                <div class="row addi_inf">
+                    <!--starting of first form-->
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <input type="email" class="form-control input-md" id="email" placeholder="Email">
+                        </div>
+                        <!--form-group-->
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <input type="Phone Number" class="form-control" id="phonenumber" placeholder="Phone Number">
+
+
+                    </div>
+                    <!--ending of first form-->
+
+
+
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="control-label" for="additional_info" class="addi_inf_padding">Addition Information</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--starting of first form-->
+                    <div class="col-md-12">
+
+                        <div class="form-group">
+
+                            <select class="form-control" id="sel1" placeholder="">
     
-      <select class="form-control" id="sel1">
+                     <option value="" disabled selected hidden>Designation</option>
+                        <option>Designer</option>
+                        <option>Developer</option>
+                        <option>Tester</option>
+                
+                        </select>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <!--starting of first form-->
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <select class="form-control" id="sel1">
           
-        <option>Designer</option>
-        <option>Developer</option>
-        <option>Tester</option>
-        
-      </select>
 
-  </div>
-   </form>
-    
-        </div>
-         <div class="col-md-2">
-    </div></div>
-    <!--ending of first form-->
+                                    <option value="" disabled selected hidden aria-placeholder="Years of Experience">Years of Experience</option>
+                                    <option>Fresher</option>
+                                    <option>less than 1 year</option>
+                                    <option>1-2 years</option>
+                                    <option>2-3 years</option>
+                                    <option>3-4 years</option>
+                                    <option>4-5 years</option>
+                                    <option>more than 5 years</option>
+                                </select>
+                        </div>
+                        <!--form-group-->
 
+                    </div>
+                    <div class="col-md-6">
 
-<div class="row">
-  <!--starting of first form-->
-    <div class="col-md-2">
-    </div>
-        <div class="col-md-4 column_space">
-            <form>
-  <div class="form-group">
-    <input type="text" class="form-control input-md" id="yearofexperience" placeholder="Year of Experience ">
-  </div><!--form-group-->
-            </form>
-        </div>
-           <div class="col-md-4 column_space2">
-               
-                <input type="text" class="form-control" id="noticeperiod" placeholder="Notice Period">
-                 
-    
-        </div>
-         <div class="col-md-2">
-    </div></div>
-    <!--ending of first form-->
-
-<div class="row">
-  <!--starting of first form-->
-    <div class="col-md-2">
-    </div>
-        <div class="col-md-4 column_space">
-            <form>
-  <div class="form-group">
-    <input type="text" class="form-control input-md" id="currentctc" placeholder="Current CTC ">
-  </div><!--form-group-->
-            </form>
-        </div>
-           <div class="col-md-4 column_space2">
-               
-                <input type="text" class="form-control" id="expectedctc" placeholder="Expected CTC">
-                 
-    
-        </div>
-         <div class="col-md-2">
-    </div></div>
-    <!--ending of first form-->
+                        <input type="text" class="form-control" id="noticeperiod" placeholder="Notice Period">
 
 
-<div class="row">
-  <!--starting of first form-->
-    <div class="col-md-2">
-    </div>
-        <div class="col-md-8 column_space">
-            <form>
-  <div class="form-group">
-    <input type="text" class="form-control input-md" id="updatedcv" placeholder="Upload PDF/CV:">       
+                    </div>
+                </div>
 
-<div class="attach">
- 
+                <div class="row">
+                    <!--starting of first form-->
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <input type="text" class="form-control input-md" id="currentctc" placeholder="Current CTC ">
+                        </div>
+                        <!--form-group-->
+
+                    </div>
+                    <div class="col-md-6">
+
+                        <input type="text" class="form-control" id="expectedctc" placeholder="Expected CTC">
+
+
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <!--starting of first form-->
+                    <div class="form-group">
+                        <div class="col-md-12">
+                      <div class="column_space13">
+                                <label for="fullname" class="col-md-3  control-label color_text_upload">Upload Resume/cv:</label>
+                                
+                                    <div class="form-group">
+                                        <div class="attach">
+                                            <upload-image ng-model="formData.qualificationCertificate" no-view></upload-image>
+                                    
+                                    
+                                </div>
+                      </div>
+
+
                             </div>
-  </div>
-    
-          
-  </div></form>
-    
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="row padding_buttom">
+                    <div class="col-md-12 text-center">
+                        <input type="submit" class="btn btn-default button_submit">
+                    </div>
+                </div>
+            </form>
+                </div>
+            </div>
         </div>
-         <div class="col-md-2">
-    </div></div>
-    <!--ending of first form-->
-
-
-<div class="row padding_buttom">
-    <div class="col-md-2"></div>
-      <div class="col-md-6 button_add">
-           <input type="submit" value="Submit" class="pull-right btn btn-default button_submit"> 
-</div>
- <div class="col-md-2">
- </div>
-   <div class="col-md-2">
-</div>
-</div><!--container-->
+    </uib-tab>
+</uib-tabset>

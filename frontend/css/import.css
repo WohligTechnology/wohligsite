@@ -9254,7 +9254,7 @@ header {
   color: white; }
 
 form {
-  background-color: #f9f9f9; }
+  background-color: none; }
 
 .container {
   padding-left: 490px; }
@@ -9465,11 +9465,135 @@ a {
 .tab_form {
   background-color: #ececec; }
 
-.column_space {
-  padding: 0px 10px 0px 0px; }
+.column_space12 {
+  border: 1px; }
 
 .column_space2 {
-  padding: 0px px 0px 2px; }
+  padding: 0px 0px 0px 2px;
+  border-color: white; }
+
+.choose_file {
+  position: relative; }
+
+.upload {
+  position: absolute;
+  right: 0;
+  width: 0px;
+  height: 0px; }
+
+.btn {
+  padding: 0px; }
+
+.select_option {
+  width: 385px;
+  height: 34px;
+  background-color: white; }
+
+.inputImage {
+  background-color: white;
+  color: black;
+  padding-right: 522px;
+  padding-bottom: 10px;
+  width: 206px;
+  margin-right: 519px;
+  margin-left: 62px;
+  padding-left: -1px;
+  height: 21px; }
+
+.btn-primary {
+  color: black;
+  background-color: white;
+  border-color: white; }
+
+.btn-primary:hover {
+  color: black;
+  background-color: white;
+  border-color: white; }
+
+.btn-default:hover {
+  color: #333;
+  background-color: white;
+  border-color: white; }
+
+.img_tab {
+  width: 130px; }
+
+.inputImage {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  opacity: 0;
+  left: 0px; }
+
+.attach .btn-upload input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  opacity: 0; }
+
+.attach .btn-upload:after {
+  content: 'Attach PDF File';
+  text-color: black;
+  border-bottom: 1px solid;
+  color: blue; }
+
+.column_space13 {
+  background-color: white;
+  border: 1px solid lightgray;
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 35px; }
+
+.button_submit {
+  padding: 12px 30px 12px 30px;
+  margin: 50px 0px 0px 0px;
+  background-color: #00b0c7;
+  color: white; }
+
+.img_width {
+  width: 120px; }
+
+.nav-tabs {
+  background-color: #f9f9f9;
+  border: none; }
+
+.text_tab1 {
+  color: #00b0c7;
+  padding-left: 12px;
+  padding-right: 12px; }
+
+.text_tab2 {
+  color: #00b0c7;
+  padding-left: 24px;
+  padding-right: 20px;
+  border: none; }
+
+.uib-tab nav-item {
+  margin-left: 350px;
+  margin-right: -169px; }
+
+.addi_inf_padding {
+  padding-top: 15px; }
+
+.color_text_upload {
+  color: #b4b0b0;
+  font-size: 17px; }
+
+.nav-link:hover {
+  background-color: #b4b0b0; }
+
+.button_submit:hover {
+  background-color: #00b0c7;
+  color: white; }
+
+.nav nav-tabs {
+  text-align: center;
+  margin-bottom: 1px;
+  display: inline-block;
+  padding: 0px 40px 0px 12px; }
 
 #fancybox-loading,
 .fancybox-close,
