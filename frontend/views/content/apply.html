@@ -21,35 +21,72 @@
         <div class="container ">
              <div class="row">
                  <div class="col-md-offset-2 col-md-8 color-form">
-                      <div class="space_current_page" role="tablist" class="panel-group">
+                      <div class="space_current_page">
+  <uib-accordion close-others="oneAtATime">
+    <div uib-accordion-group class="panel-default heading_color" is-open="status.open1">
+      <uib-accordion-heading><b class="underline_text">
+        Developer <i class="pull-right fa" ng-class="{'fa-minus': status.open1, 'fa-plus': !status.open1}"></i>
+      </b></uib-accordion-heading>
+      hello
+    </div>
 
-             <div class="panel panel-default">
-                   <div role="tab"  aria-selected="true" class="panel-heading heading_color"  aria-selected="true" class="panel-heading" ng-keypress="toggleOpen($event)">
-                     
-                         <h4 class="panel-title">
-                             <div class="display-inline"><h4 class="text-up font-bold color-blue ng-binding"><b>Developer</b>
-                        <i class="pull-right fa fa-plus"></i>
-                            </h4>    </div>  </h4> </div>
-                            <!--<div role="tab" id="accordiongroup-1305-1963-tab" aria-selected="true" class="panel-heading" ng-keypress="toggleOpen($event)">
-    <h4 class="panel-title">
-      <a role="button" data-toggle="collapse" href="" aria-expanded="true" aria-controls="accordiongroup-1305-1963-panel" tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
-          <span uib-accordion-header="" ng-class="{'text-muted': isDisabled}" class="ng-binding"><h4 class="ng-scope"><span class="uppercase bold ng-binding">Branding Solution</span> <i class="pull-right fa fa-minus" ng-class="{'fa-minus': status.open1, 'fa-plus': !status.open1}" style=""></i></h4></span></a>
-    </h4>
-  </div>-->
-                            <div id="accordiongroup-1305-1963-panel" aria-labelledby="accordiongroup-1305-1963-tab" aria-hidden="false" role="tabpanel" class="panel-collapse in collapse" uib-collapse="!isOpen" aria-expanded="true" style="height: auto;">
-    <div class="panel-body" ng-transclude=""><uib-accordion-heading class="ng-scope"></uib-accordion-heading><div ng-bind-html="data.content" class="ng-binding ng-scope">We bring a brand-centric approach to sport and entertainment marketing, thanks to our potent combination of strategists, negotiators, creative, digital
-experts and project managers. Using our proprietary,
-strategic model, we consider all relevant business and
-brand factors to guide our clients through property,
-investment, activation and analytics decisions.</div></div>
+    <div uib-accordion-group class="panel-default" is-open="status.open2">
+      <uib-accordion-heading><b>
+        Designer <i class="pull-right fa" ng-class="{'fa-minus': status.open2, 'fa-plus': !status.open2}"></i>
+     </b> </uib-accordion-heading>
+      
+
+
+
+
+    
+            <div class="column_style">
+                   <p ><i class="fa fa-briefcase design_font icon_text"  aria-hidden="true" style="display: inline; " class="space_b"> </i> <b class="space_b">2-5 Years</b></p>
+                  <p> <i class="fa fa-map-marker design_font"  aria-hidden="true"  style="display: inline; "> <b class="space_b1"></i>Sion, Mumbai</b></p>
+                  
+                   <p><i class="fa fa-inr design_font"  aria-hidden="true" style="display: inline;"><b class="space_b3"></i>As per industry standards</b></p>
+
+                    
+                   <h4 class="job_d"> <b>Job Description</b></h4>
+                   <p class="paragraph_hight"><b>1.Work closely with ux designers and Developers for design hand offs.</b></p>
+                       <p class="paragraph_hight"><b>2.Get objective design feedback and iterate.</b></p>
+                       <p class="paragraph_hight"><b>3.Join a team of weird hard - workers, to build an awesome product.</b></p>
+                       <p class="paragraph_hight"><b>4. You have a portfolio demonstrating strong web and mobile interface projects.</b></p>
+                       <p class="paragraph_hight"><b>5. You have 2-3 years of experience with responsive design.</b></p>
+                       <p class="paragraph_hight"><b>6. You have strong UI sensibilities.</b></p>
+                           <h4 class="profile_p"><b> Desired Candidate Profile</b></h4>
+                          <P class="paragraph_hight"><b> Education-</b></P>
+                         <p class="paragraph_hight"><b> UG: B.Tech/B.E, BCA,B.sc</b></p>
+                         <p class="paragraph_hight"><b>PG: M.Tech,MCA</b></p>
+                
+                         <button type="button" class="btn btn-primary button_apply profile_p"><b>Apply Now</b></button>
+</div>
+
+
+
+
+
+
+
+
+
+
+      
+    </div>
+
+    <div uib-accordion-group    class="panel-default" is-open="status.open3">
+      <uib-accordion-heading><b>
+        Tester<i class="pull-right  fa" ng-class="{'fa-minus': status.open3, 'fa-plus': !status.open}"></i>
+   </b>   </uib-accordion-heading>
+      hello
+    </div>
+    
+    </uib-accordion>
+    
+    </div></div>
   </div>
-
-                      
                  </div>
-             </div>
-        </div>
-        </div>
-        </div>
+
    
 <!--end designer-->
 

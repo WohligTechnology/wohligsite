@@ -9533,13 +9533,13 @@ a {
   height: 35px; }
 
 .button_submit {
-  padding: 12px 30px 12px 30px;
+  padding: 12px 30px 8px 30px;
   margin: 50px 0px 0px 0px;
   background-color: #00b0c7;
   color: white; }
 
 .img_width {
-  width: 140px; }
+  width: 131px; }
 
 .nav-tabs {
   background-color: #f9f9f9;
@@ -9575,7 +9575,7 @@ a {
   float: none;
   margin-bottom: 1px;
   display: inline-block;
-  padding: 0px 40px; }
+  padding: 0px 100px; }
 
 .row_padding {
   padding-bottom: 4px;
@@ -9604,14 +9604,83 @@ div.ul {
   margin: 40px 30px 40px 30px;
   background-color: white; }
 
-.heading_color {
-  color: white !important;
-  background-color: #f5f5f5 !important;
-  border-color: #ddd !important;
-  background-color: #636363 !important; }
-
 .nav-tabs {
   text-align: center; }
+
+.panel-default > .panel-heading {
+  color: white;
+  background-color: #636363;
+  border-color: #ddd; }
+
+.panel-heading {
+  height: 44px;
+  border-radius: 0px; }
+
+span.ng-binding {
+  padding-left: 35px;
+  font-size: 22px; }
+
+.panel-group .panel {
+  margin-bottom: 33px; }
+
+.column_style {
+  padding: 15px 30px 30px 30px !important;
+  line-height: 2.428571; }
+
+.space_b {
+  padding-left: 15px;
+  margin-top: 12px; }
+
+.job_d {
+  margin-bottom: 22px;
+  margin-top: 30px; }
+
+.paragraph_hight {
+  line-height: 0.9 !important; }
+
+.profile_p {
+  margin-top: 30px;
+  margin-bottom: 22px; }
+
+.button_apply {
+  padding: 5px 24px 5px 24px;
+  color: white;
+  background-color: #00b0c7; }
+
+.getintouch_button_Submit {
+  padding: 10px 25px 15px 25px;
+  color: white;
+  background-color: #00b0c7; }
+
+.getintouch_button_Submit:hover {
+  padding: 10px 25px 10px 25px;
+  color: white;
+  background-color: #00b0c7; }
+
+.plus_color {
+  color: #00b0c7; }
+
+.design_font {
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 0px; }
+
+.accordion-inner {
+  border: none !important; }
+
+.space_b1 {
+  padding-left: 12px; }
+
+.space_b3 {
+  padding-left: 15px;
+  margin-top: 12px;
+  padding-bottom: 2px; }
+
+.panel-title > a:hover {
+  text-decoration: none; }
+
+.panel-title > a {
+  text-decoration: none; }
 
 #fancybox-loading,
 .fancybox-close,

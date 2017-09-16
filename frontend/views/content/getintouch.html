@@ -28,29 +28,29 @@
                 
                                  <div class="enquiry_wohlig">
                                   <a href="" class="fsize color:#00b0c7" target="_blank">
-                                  <i class="fa fa-google-plus" aria-hidden="true"></i></a></div>  <span class="email_page">Email Address</span>
+                                  <i class="fa fa-google-plus plus_color" aria-hidden="true"></i></a></div>  <span class="email_page">Email Address</span>
                         </h5>
                         </div><!--column-->
                        <div class="inquiry_details">
                         <h5 class="inq_font"><b>Inquiry Contact</b><br></h4>
                         <h6>
-                             <p>   <a href="" class="fsize color-white" target="_blank">
+                             <p class="letter_space_content"> <a href="" class="fsize color-white" target="_blank">
                                                  <i class="fa fa-phone"></i></a>   +1.877.771.1900 ext. 4</p>
-                                                 <p>
-                              <a href="" class="fsize color-white" target="_blank">
-                                                 <i class="fa fa-phone"></i></a>+1.877.771.1900
-                                ext.4</p>
-                                <p>
-                                 <a href="" class="fsize color-white" target="_blank">
+                                                 
+                            <p class="letter_space_content"><a href="" class="fsize color-white" target="_blank">
+                                                 <i class="fa fa-phone"></i></a>+1.877.771.1900 ext.4</p>
+
+                            <p class="letter_space_content"> <a href="" class="fsize color-white" target="_blank">
                                                  <i class="fa fa-phone"></i></a>                               +1.877.771.1900(fax)
-                                </p><p>
-                                <a href="" class="color_blue">
+                                </p>
+                                
+                            <p class="letter_space_content">   <a href="" class="color_blue">
                                                         <a href="" class="fsize color-white" target="_blank">
                                                  <i class="fa fa-envelope-o"></i></a>                        help@wohligtechnology.com
                                 </p>
-                                <p>
+                                <p >
                                 </a>
-                                <p><a href="" class="fsize color-white" target="_blank">
+                                <p class="letter_space_content"><a href="" class="fsize color-white" target="_blank">
                                                  <i class="fa fa-clock-o"></i></a> Mon-Fri:4am
                                 to 5pm Public Time</p>
                         </h5>
@@ -102,7 +102,7 @@
     </div>
   </div>
   <div class="form-group">
-    <label class="control-label col-md-3" for="Email_id">Email_id</label>
+    <label class="control-label col-md-3" for="Email_id">Email Id.</label>
     <div class="col-md-9"> 
       
     <input type="email" ng-model="data.email" class="form-control" id="email" placeholder="Email" name="email" required>
@@ -114,9 +114,9 @@
   </div>
 
   <div class="form-group">
-    <label class="control-label col-md-3" for="contact_no">Contact_no</label>
+    <label class="control-label col-md-3" for="contact_no">Contact No.</label>
     <div class="col-md-9">
-      <input type="text" name="Contact_no" ng-model="data.age" class="form-control" id="age" placeholder="contact_no" min="18" max="50" required>
+      <input type="text" name="Contact_no" ng-model="data.age" class="form-control" id="age" placeholder="Contact No" min="18" max="50" required>
             <div class="pull-right" ng-repeat="(field,value) in formData.age.$error" ng-show="formData.age.$touched">
                 <span class="label label-danger" ng-if="field=='required' && value">Please Enter contact No</span>
                 <span class="label label-danger" ng-if="field=='min' && value">contact_no should be greater than 1</span>
@@ -125,9 +125,9 @@
     </div>
   </div>
   <div class="form-group">
-    <label class="control-label col-md-3" for="message">Message/Query</label>
+    <label class="control-label col-md-3 message_form" for="message">Message/<br>Query</label>
     <div class="col-md-9"> 
-    <textarea name="query" ng-model="data.query" id="query" cols="30" rows="3" class="form-control" required></textarea>
+    <textarea name="query" ng-model="data.query" placeholder="Message/Query" id="query" cols="30" rows="3" class="form-control" required></textarea>
             <div class="pull-right" ng-repeat="(field,value) in formData.query.$error" ng-show="formData.query.$touched">
                 <span class="label label-danger" ng-if="field=='required' && value">Please Enter Query</span>
             </div>
@@ -136,7 +136,7 @@
   
   <div class="form-group"> 
     <div class="col-md-12">
-       <input type="submit" value="Submit" class="pull-right btn btn-default butn">
+       <input type="submit" value="Submit" class="pull-right btn btn-default getintouch_button_Submit">
     </div>
   </div>
 </form> 
