@@ -9330,7 +9330,9 @@ form {
   background-color: white; }
 
 .img-wrapper {
-  position: relative; }
+  position: relative;
+  top:59px;
+   }
 
 .page_row {
   padding-top: 60px;
@@ -9907,7 +9909,7 @@ span.ng-binding {
   .Name_title {
     font-weight: bolder;
     margin: 0px;
-    font-size: 10px; }
+    font-size: 16px; }
   .draw_image_background {
     margin-top: 44px; }
   .img1 {
