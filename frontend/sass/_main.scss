@@ -128,11 +128,23 @@ header {
 
 .img1
 {
-  width:130px;
-  height:60px;
-margin-left:60px;
-padding-top:10px;
-margin-bottom:15px;
+ width: 130px;
+    height: 60px;
+    margin-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    margin-bottom: 9px;
+}
+.design_middle
+{
+    text-align: center;
+
+    width: 100%;
+}
+.navbar-nav
+{
+    padding-left: 320px;
+    padding-top: 12px;
 
 }
 .details
@@ -153,22 +165,12 @@ form{
         padding-left: 490px;
 
 }
-div.Details_Container
-{ 
-    margin-left: 67px;
-    margin-right: 100px;    
-    padding-left:180px; 
-    padding-right:200px; 
-    padding-bottom:30px;
-}
+
 .column_addr
 {
     background-color: #00b0c7;
-    padding-left:41px;
-    
-    padding-top:37px;
+     padding: 37px 20px 60px 25px;
     color:white;
-        padding-bottom: 60px;
 height:50%;
     line-height:1.5ch;
 
@@ -211,7 +213,7 @@ height:50%;
 {
     line-height: 1.3;
 }
-.inquiry_details
+.enquiry_details
 {
     height:50%;
         background-color: #ececec;
@@ -231,6 +233,11 @@ height:50%;
 
 
 }
+.Name_title {
+    font-weight: bolder;
+    margin: 0px;
+    font-size:10px;
+}
 
 
 .bmain
@@ -246,14 +253,17 @@ height:50%;
 }
 .page_row
 {
-    box-shadow: 1px 1px 8px -2px;
+        padding-top: 60px;
+    padding-bottom: 60px;
     font-family: arial;
+    
 }
 .design_nav
 {
     padding-top: 0px;
 }
-.background_name h6{
+.Name_title
+{
     position: absolute;
     top:50%;
     left:50%;
@@ -311,7 +321,7 @@ a{
     padding-left:0px;
     background-color: #ececec;
     padding-right: 0px;
-    height:700px;
+   
     padding-bottom: 35px;
 }
   
@@ -330,6 +340,7 @@ a{
 .padding_page
 {
         padding-left: 0px;
+            height: 100%;
     padding-right: 0px;
 }
 .form-horizontal .control-label
@@ -351,31 +362,20 @@ a{
 }
 .gm-style .place-card-large{
     display:none !important;
+
 }
-.page_row{
-box-shadow: 2px 2px 8px -3px;
-}
-.Details_Container
-{
-    margin-top:60px;
-}
+
 .page_design{
      background-color: #f9f9f9;
-    padding:20px 40px 40px 40px; 
+    padding:20px 40px 22px; 
     height:100%;
     
 }
 .wohlig_address{
     font-size:16px!important;
 }
-.wohlig_form
-{
-    
-}
-.page_row
-{
-background-color:#ececec;
-}
+
+
 .Frame_map
 {
          padding-top: 20px;
@@ -441,7 +441,7 @@ border-color:white;
     
     right: 0;
 width:0px;
-height:0px;
+height:100%;
 }
 .btn{
     padding: 0px;
@@ -517,7 +517,8 @@ height:0px;
     color:white;
 }
 .img_width{
-    width:131px;
+        width: 119px;
+    margin: 0 auto;
 }
 .nav-tabs  {
     background-color: #f9f9f9;
@@ -526,8 +527,7 @@ height:0px;
 .text_tab1
 {
     color:#00b0c7;
-    padding-left: 12px;
-    padding-right: 12px;
+    font-size: 13px;
 }
 .text_tab2
 {
@@ -543,26 +543,36 @@ margin-left: 350px;
 }
 .addi_inf_padding
 {
-    padding-top: 17px;
-}
-.color_text_upload
-{
-    color:#b4b0b0;
-        font-size: 17px;
+    padding-top: 13px;
 }
 
 .nav-link:hover{
     background-color: #b4b0b0;
 }
+.create-btn{
+color:blue;
+    background-color:white;
+    border-color:white;
 
+}
+.create-btn:hover{
+color:blue;
+    background-color:white;
+    border-color:white;
+
+}
 .nav-tabs >li{
     
     text-align: center;
     float: none;
     margin-bottom: 1px;
     display: inline-block;
-    padding:  0px 100px;
+    padding: 0px 151px 0px 1px;
         
+}
+.option_color
+{
+    color:black;
 }
 .row_padding
 {
@@ -571,9 +581,9 @@ margin-left: 350px;
 }
 .color_text_upload {
     
-    font-size: 17px;
-    padding-top: 5px;
     font-size: 15px;
+    padding-top: 5px;
+     color: rgba(191, 186, 186, 0.79) !important;
 }
 .btn {
     padding: 0px;
@@ -591,10 +601,11 @@ div.ul
 {
     background-color: #f9f9f9;
     margin-top:34px;
+    margin-bottom: 30px;
 }
 .space_current_page
 {
-    margin: 40px 30px 40px 30px;
+    margin: 40px 30px 42px 30px;
     background-color: white;
 }
 
@@ -628,7 +639,9 @@ span.ng-binding
 }
 .space_b{
         padding-left: 15px;
-        margin-top:12px; 
+        margin-top:12px;
+            vertical-align: middle;
+
 }
 .job_d
 {
@@ -650,15 +663,23 @@ margin-bottom: 22px;
     padding: 5px 24px 5px 24px;
     color: white;
 background-color: #00b0c7;
+    border-color: #00b0c7;
 }
-.getintouch_button_Submit
+.button_apply:hover
+{
+    padding: 5px 24px 5px 24px;
+    color: white;
+background-color: #00b0c7;
+    border-color: #00b0c7;
+}
+.G-button_Submit
 {
     padding: 10px 25px 10px 25px;
     color:white;
     background-color:  #00b0c7;
 
 }
-.getintouch_button_Submit:hover
+.G-button_Submit:hover
 {
     padding: 10px 25px 10px 25px;
     color:white;
@@ -672,8 +693,7 @@ background-color: #00b0c7;
 .design_font
 {
     font-size: 25px;
-     padding-top: 10px;
-     padding-bottom: 0px;
+         vertical-align: middle;
 }
 
 .accordion-inner {
@@ -698,4 +718,11 @@ background-color: #00b0c7;
 .panel-title > a
 {
     text-decoration: none;
+}
+.year_text_color
+{
+    color: #948b8b;
+}
+.color-form{
+        box-shadow: 0px 1px 9px -4px
 }

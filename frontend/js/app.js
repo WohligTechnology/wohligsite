@@ -42,6 +42,12 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             controller: 'GetInTouchCtrl'
         })
 
+.state('grid12', {
+            url: "/grid12",
+            templateUrl: tempateURL,
+            controller: 'GridCtrl'
+        })
+
         
          .state('apply', {
             url: "/apply",

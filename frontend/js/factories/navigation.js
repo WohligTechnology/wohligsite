@@ -9,15 +9,40 @@ myApp.factory('NavigationService', function () {
                 anchor: "home"
             }]
         }, {
-            name: "Form",
+            name: "About us",
             classis: "active",
-            anchor: "form",
+            anchor: "About us",
             subnav: []
         },
         {
-            name: "Grid",
+            name: "Services",
             classis: "active",
-            anchor: "grid",
+            anchor: "Services",
+            subnav: []
+        },
+         {
+            name: "Work Process",
+            classis: "active",
+            anchor: "Work Process",
+            subnav: []
+        },
+         {
+            name: "Current Openings",
+            classis: "active",
+            anchor: "apply",
+            subnav: []
+        },
+         {
+            name: "Clients",
+            classis: "active",
+            anchor: "Clients",
+            subnav: []
+        },
+        
+        {
+            name: "Get in Touch",
+            classis: "active",
+            anchor: "getintouch",
             subnav: []
         }
     ];

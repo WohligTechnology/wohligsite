@@ -1,3 +1,119 @@
  @media (max-width: $screen-sm-max) {
      // Tablet
+     .page_design
+     {
+font-size: 14px;
+padding: 13px 37px 22px;
+     }
+     
+
+.form-horizontal .control-label {
+    text-align: left;
+ }
+ .map_img
+ {
+      height: 360px;
+    width: 273px;
+ }
+ .Frame_map
+ {
+         height: 344px;
+
+ }
+ .fa {
+    font-size: 16px;
+}
+label.control-label{
+     padding: 0px;
+ }
+ .page_form
+ {
+     padding-top: 20px;
+ }
+.G-button_Submit {
+    padding:3px 16px 3px 16px;
+    color: white;
+    background-color: #00b0c7;
+}
+.column_addr {
+padding: 24px 20px 47px 25px;
+}
+ .G-button_Submit:hover {
+    padding:3px 16px 3px 16px;
+    color: white;
+    background-color: #00b0c7;
+}
+.font-page
+{
+        font-size: 22px;
+}
+.fa {
+    
+    font-size: 15px;
+  
+}
+.enquiry_details
+{
+        padding-left: 25px;
+        padding-bottom: none;
+           padding-top: 5px;
+
+}
+.line_page {
+    padding:15px 0px 0px 0px;
+ }
+ .padding_page
+ {
+height:100%;
+ }
+ .column_main
+ {
+     padding: 0px 0px 0px 0px;
+     
+ }
+ .navbar-nav {
+ 
+    
+    padding-left: 93px;
+    padding-top: 12px;
+}
+ }
+ .img1 {
+    width: 86px;
+    height: 50px;
+    margin-left: 17px;
+    padding-top: 18px;
+    padding-bottom: 3px;
+    margin-bottom: 11px;
+}
+
+ .span.ng-binding {
+    padding-left: 18px;
+    font-size: 20px;
+    }
+    .fa.pull-right
+    {
+  margin-top: 4px;
+    }
+  .span.ng-binding {
+    padding-left: 35px;
+    font-size: 18px;
+}
+.space_b
+{
+    font-size: 14px;
+}
+.space_b1
+{
+    font-size: 14px;
+padding-left: 10px;
+}
+.space_b3{
+    font-size: 14px;
+    padding-left: 12px;
+}
+.paragraph_hight {
+    line-height: 1.5 !important;
+}
+    
  }
