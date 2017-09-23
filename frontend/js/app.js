@@ -42,7 +42,20 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             controller: 'GetInTouchCtrl'
         })
 
-.state('grid12', {
+        .state('privacy_policy', {
+            url: "/privacy_policy",
+            templateUrl: tempateURL,
+            controller: 'PrivacyPolicyCtrl'
+        })
+
+        .state('Terms_condition', {
+            url: "/Terms_condition",
+            templateUrl: tempateURL,
+            controller: 'Terms_conditionCtrl'
+        })
+
+
+         .state('grid12', {
             url: "/grid12",
             templateUrl: tempateURL,
             controller: 'GridCtrl'

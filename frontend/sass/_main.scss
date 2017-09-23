@@ -140,11 +140,11 @@ header {
 .img-holder_12{
 .img1
 {
-      width: 108px;
+         width: 108px;
     height: 64px;
     margin-left: 61px;
-    padding-top: 16px;
-    padding-bottom: 1px;
+    padding-top: 15px;
+    padding-bottom: 9px;
     margin-bottom: 11px;
 }
 }
@@ -226,6 +226,7 @@ height:50%;
 .line_page2
 {
     line-height: 1.3;
+        padding-bottom: 5px;    
 }
 .enquiry_details
 {
@@ -233,7 +234,7 @@ height:50%;
         background-color: #ececec;
         padding-top: 30px;
     padding-left: 30px;
-        padding-bottom: 17px;
+        padding-bottom: 7px;
 
 }
 .en h6{
@@ -335,7 +336,7 @@ a{
     padding-left:0px;
     background-color: #ececec;
     padding-right: 0px;
-    padding-bottom: 28px;
+    padding-bottom: 30px;
 }
 .map-img
 {
@@ -395,10 +396,15 @@ a{
 }
 .inq_font
 {
-padding-top: 10px;
+        font-size: 19px;
+    padding-bottom: 9px;
+padding-top: 47px;
 }
 .line_page{
-    padding-top: 30px;
+    padding-top: 45px;
+        font-size: 18px;
+            padding-bottom: 6px;
+
 }
 .form_container
 {
@@ -408,13 +414,16 @@ padding-top: 10px;
 {
     background-color: white;
 }
-.button_submit
+.button_submit_data
 {
-    padding-left: 24px;
-    padding-right: 24px;
+  
+    padding-left: 30px;
+    margin-top: 18px;
+    padding-right: 30px;
     color: white;
         background-color: #00b0c7;
 }
+
 .button_add
 {
     padding-right: 150px;
@@ -476,7 +485,11 @@ height:100%;
     padding-left: -1px;
     height: 21px;
 }
-
+.letter_space_content
+{
+font-size: 14px;
+    padding-bottom: 5px;
+}
 
 
 .img_tab
@@ -521,13 +534,7 @@ height:100%;
     padding-right:0px;
     height: 35px;
 }
-.button_submit
-{
-    padding: 12px 30px 8px 30px;
-    margin: 50px 0px 0px 0px;
-        background-color: #00b0c7;
-    color:white;
-}
+
 .img_width{
         width: 119px;
     margin: 0 auto;
@@ -745,4 +752,32 @@ background-color: #00b0c7;
 }
 .color-form{
         box-shadow: 0px 1px 9px -4px
+}
+.label-danger
+{
+background-color: transparent;
+color:red;
+
+}
+.image_privacy
+{
+        width: 100%;
+    
+}
+.letters
+{
+    line-height: 1.4;
+}
+.letter_word
+{
+    padding: 25px 0px 25px 0px;
+}
+.letter_space
+{
+    padding-top: 15px;
+}
+.word_line
+{
+    padding-bottom: 5px;
+    font-size: 14px;
 }

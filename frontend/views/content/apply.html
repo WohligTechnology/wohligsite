@@ -157,10 +157,10 @@
             <div class="row ">
                 <div class="col-md-offset-2 col-sm-offset-2 col-xs-offset-1">
                 <div class=" col-md-10 col-sm-8 col-xs-12">
-            <form name="formData">
+            <form name="formData" role="form" ng-submit="login(userData,formData)">
                 <div class="row padd_top">
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="form-group">
+                        <div class="form-group float-label">
                             <label class="control-label" for="aboutyou">About You</label>
                         </div>
                     </div>
@@ -168,9 +168,10 @@
                 <div class="row">
                     <!--starting of first form-->
                     <div class="col-md-6 col-sm-6 col-xs-12 ">
-                        <div class="form-group">
-                            <input type="text" class="form-control" ng-model="userData.firstname" id="firstname" placeholder="First Name" required name="firstname">
-                <div class="pull-right" ng-repeat="(field,value) in formData.name.$error" ng-show="formData.name.$touched">
+                        <div class="form-group float-label">
+                            <input type="text" ng-model="userData.firstname" class="form-control"  id="firstname" placeholder="First Name" required name="firstname">
+                            
+                <div class="pull-right" ng-repeat="(field,value) in formData.firstname.$error" ng-show="formData.firstname.$touched">
                   <span class="label label-danger" ng-if="field=='required' && value">Please Enter Full Name</span>
                 </div>
                         </div>
@@ -179,8 +180,8 @@
                     </div>
                     <div class="col-md-6 col-sm-6 form_text">
 
-                        <input type="text" class="form-control"  ng-model="userData.lastname" id="lastname" placeholder="Last Name" required name="lastname">
-               <div class="pull-right" ng-repeat="(field,value) in formData.name.$error" ng-show="formData.name.$touched">
+                        <input type="text" ng-model="userData.lastname" class="form-control"  id="lastname" placeholder="Last Name" required name="lastname">
+               <div class="pull-right" ng-repeat="(field,value) in formData.lastname.$error" ng-show="formData.lastname.$touched">
                   <span class="label label-danger" ng-if="field=='required' && value">Please Last Name</span>
                 </div>
 
@@ -191,18 +192,20 @@
                 <div class="row addi_inf">
                     <!--starting of first form-->
                     <div class="col-md-6 col-sm-6 col-xs-12">
-
-                        <div class="form-group">
-                            <input type="email" class="form-control input-md" id="email" placeholder="Email">
-                        </div>
+                        <div class="form-group float-label">
+                               <input type="email" ng-model="userData.email" class="form-control"  id="email" placeholder="Email" required name="email">
+               <div class="pull-right" ng-repeat="(field,value) in formData.email.$error" ng-show="formData.email.$touched">
+                  <span class="label label-danger" ng-if="field=='required' && value">Please Last Name</span>
+                    </div>
+                              </div>
                         <!--form-group-->
                     </div>
 
                     <div class="col-md-6 col-sm-6 form_text">
 
-                        <input type="Phone Number" class="form-control"   ng-model="userData.phonenumber" id="phonenumber" placeholder="Phone Number" required name="phonenumber">
+                        <input type="Phone Number"  ng-model="userData.phonenumber" class="form-control"   id="phonenumber" placeholder="Phone Number" required name="phonenumber">
  
-               <div class="pull-right" ng-repeat="(field,value) in formData.name.$error" ng-show="formData.name.$touched">
+               <div class="pull-right" ng-repeat="(field,value) in formData.phonenumber.$error" ng-show="formData.phonenumber.$touched">
                   <span class="label label-danger" ng-if="field=='required' && value">Please Phone Number</span>
                </div>
 
@@ -215,7 +218,7 @@
                 
                 <div class="row ">
                     <div class="col-md-12 col-sm-6 col-xs-12">
-                        <div class="form-group ">
+                        <div class="form-group float-label">
                             <label class="control-label" for="additional_info" class="addi_inf_padding">Addition Information</label>
                         </div>
                     </div>
@@ -224,7 +227,7 @@
                     <!--starting of first form-->
                     <div class="col-md-12 col-sm-12 col-xs-12">
 
-                        <div class="form-group">
+                        <div class="form-group float-label">
 
                             <select class="form-control year_text_color" id="sel1" placeholder="">
     
@@ -246,7 +249,7 @@
                     <!--starting of first form-->
                     <div class="col-md-6 col-sm-6  col-xs-12">
 
-                        <div class="form-group">
+                        <div class="form-group float-label">
                             <select class="form-control year_text_color" id="sel1">
           
 
@@ -265,9 +268,9 @@
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12 form_text">
 
-                        <input type="noticeperiod" class="form-control" ng-model="userData.noticeperiod"  id="noticeperiod" placeholder="Notice Period" required name="noticeperiod">
+                        <input type="noticeperiod" ng-model="userData.noticeperiod" class="form-control" id="noticeperiod" placeholder="Notice Period" required name="noticeperiod">
  
-               <div class="pull-right" ng-repeat="(field,value) in formData.name.$error" ng-show="formData.name.$touched">
+               <div class="pull-right" ng-repeat="(field,value) in formData.noticeperiod.$error" ng-show="formData.noticeperiod.$touched">
                   <span class="label label-danger" ng-if="field=='required' && value">Please Phone Number</span>
                </div>
 
@@ -279,15 +282,21 @@
                     <div class="col-md-6 col-sm-6">
 
                         <div class="form-group">
-                            <input type="text" class="form-control input-md page_input" id="currentctc" placeholder="Current CTC ">
-                        </div>
+                          <input type="Current_CTC" ng-model="userData.Current_CTC" class="form-control" id="Current_CTC" placeholder="Current CTC" required name="Current_CTC">
+ 
+               <div class="pull-right" ng-repeat="(field,value) in formData.Current_CTC.$error" ng-show="formData.Current_CTC.$touched">
+                  <span class="label label-danger" ng-if="field=='required' && value">Please Enter Current CTC</span>
+               </div> </div>
                         <!--form-group-->
 
                     </div>
                     <div class="col-md-6 col-sm-6 form_text">
 
-                        <input type="text" class="form-control page_input" id="expectedctc" placeholder="Expected CTC">
-
+                         <input type="Expected_CTC" ng-model="userData.Expected_CTC" class="form-control" id="Expected_CTC" placeholder="Expected CTC" required name="Expected_CTC">
+ 
+               <div class="pull-right" ng-repeat="(field,value) in formData.Expected_CTC.$error" ng-show="formData.Expected_CTC.$touched">
+                  <span class="label label-danger" ng-if="field=='required' && value">Please Enter Expected CTC</span>
+               </div> 
 
                     </div>
                 </div>
@@ -321,7 +330,8 @@
 
                 <div class="row padding_buttom">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center ">
-                        <input type="submit" class=" btn-default button_submit">
+                         <button type="button" class="btn btn-primary button_submit_data btn-lg" ng-disabled="
+                        formData.$invalid">Submit</button>
                     </div>
                 </div>
             </form>
