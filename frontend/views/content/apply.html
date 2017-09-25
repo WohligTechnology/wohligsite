@@ -156,7 +156,7 @@
         <div class="container form_container">
             <div class="row ">
                 <div class="col-md-offset-2 col-sm-offset-2 col-xs-offset-1">
-                <div class=" col-md-10 col-sm-8 col-xs-12">
+                <div class=" col-md-8 col-sm-8 col-xs-12">
             <form name="formData" role="form" ng-submit="login(userData,formData)">
                 <div class="row padd_top">
                     <div class="col-md-12 col-sm-12 col-xs-12">
@@ -182,7 +182,7 @@
 
                         <input type="text" ng-model="userData.lastname" class="form-control"  id="lastname" placeholder="Last Name" required name="lastname">
                <div class="pull-right" ng-repeat="(field,value) in formData.lastname.$error" ng-show="formData.lastname.$touched">
-                  <span class="label label-danger" ng-if="field=='required' && value">Please Last Name</span>
+                  <span class="label label-danger" ng-if="field=='required' && value">Please Enter Last Name</span>
                 </div>
 
                     </div>
@@ -195,7 +195,7 @@
                         <div class="form-group float-label">
                                <input type="email" ng-model="userData.email" class="form-control"  id="email" placeholder="Email" required name="email">
                <div class="pull-right" ng-repeat="(field,value) in formData.email.$error" ng-show="formData.email.$touched">
-                  <span class="label label-danger" ng-if="field=='required' && value">Please Last Name</span>
+                  <span class="label label-danger" ng-if="field=='required' && value">Please Enter Email Id</span>
                     </div>
                               </div>
                         <!--form-group-->
@@ -206,7 +206,7 @@
                         <input type="Phone Number"  ng-model="userData.phonenumber" class="form-control"   id="phonenumber" placeholder="Phone Number" required name="phonenumber">
  
                <div class="pull-right" ng-repeat="(field,value) in formData.phonenumber.$error" ng-show="formData.phonenumber.$touched">
-                  <span class="label label-danger" ng-if="field=='required' && value">Please Phone Number</span>
+                  <span class="label label-danger" ng-if="field=='required' && value">Please Enter Phone Number</span>
                </div>
 
                     </div>
@@ -271,7 +271,7 @@
                         <input type="noticeperiod" ng-model="userData.noticeperiod" class="form-control" id="noticeperiod" placeholder="Notice Period" required name="noticeperiod">
  
                <div class="pull-right" ng-repeat="(field,value) in formData.noticeperiod.$error" ng-show="formData.noticeperiod.$touched">
-                  <span class="label label-danger" ng-if="field=='required' && value">Please Phone Number</span>
+                  <span class="label label-danger" ng-if="field=='required' && value">Please Enter Notice Period</span>
                </div>
 
                     </div>
@@ -313,7 +313,6 @@
                                         <div class="attach">
                                             <upload-image ng-model="formData.qualificationCertificate" no-view></upload-image>
                                     
-                                    
                              
                       </div>
 
@@ -330,8 +329,8 @@
 
                 <div class="row padding_buttom">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center ">
-                         <button type="button" class="btn btn-default button_submit_data1 btn-lg" disabled="disabled" ng-disabled="
-                        formData.$invalid">Submit</button>
+                                        <button type="submit" value="Submit" class="pull-middle btn btn-default apply_button">Apply</button>
+
                   
                 </div>
             </form>

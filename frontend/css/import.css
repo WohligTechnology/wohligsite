@@ -9699,6 +9699,12 @@ span.ng-binding {
   color: white;
   background-color: #00b0c7; }
 
+.apply_button {
+  padding: 10px 25px 10px 25px;
+  color: white;
+  margin-top: 20px;
+  background-color: #00b0c7; }
+
 .G-button_Submit:hover {
   padding: 10px 25px 10px 25px;
   color: white;
@@ -9739,7 +9745,8 @@ span.ng-binding {
   color: red; }
 
 .image_privacy {
-  width: 100%; }
+  width: 100%;
+  height: 435px; }
 
 .letters {
   line-height: 1.4; }
