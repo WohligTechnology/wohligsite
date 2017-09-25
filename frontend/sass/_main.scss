@@ -183,11 +183,16 @@ form{
 .column_address
 {
     background-color: #00b0c7;
-    padding: 73px 20px 55px 25px;
+    padding: 50px 20px 47px 25px;
     color:white;
 height:50%;
     line-height:1.5ch;
 
+}
+.wohlig_address{
+        padding-top: 15px;
+    padding-left: 19px;
+    padding-bottom: 17px;
 }
 .main_footer
 {
@@ -336,7 +341,7 @@ a{
     padding-left:0px;
     background-color: #ececec;
     padding-right: 0px;
-    padding-bottom: 30px;
+    padding-bottom: 13px;
 }
 .map-img
 {
@@ -348,6 +353,7 @@ a{
 {
     font-size: 22px;
     padding-left: -7px;
+text-align: center;
     
 }
 .padding_page
@@ -398,7 +404,7 @@ a{
 {
         font-size: 19px;
     padding-bottom: 9px;
-padding-top: 47px;
+padding-top: 31px;
 }
 .line_page{
     padding-top: 45px;
@@ -414,13 +420,15 @@ padding-top: 47px;
 {
     background-color: white;
 }
-.button_submit_data
+.button_submit_data1
 {
-  
-    padding-left: 30px;
-    margin-top: 18px;
-    padding-right: 30px;
-    color: white;
+      color: white;
+    padding-top: 5px;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-bottom: 5px;
+    margin-top: 12px;
+   border: 1px solid white;
         background-color: #00b0c7;
 }
 

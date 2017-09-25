@@ -10,7 +10,7 @@
         </div>
     </div>-->
     <footer>
-<div class="container">
+<div class="container" ng-controller="footerCtrl">
     <div class="footer-bottom pull-left">
 
             <p class="ng-binding">
@@ -18,7 +18,10 @@
         </div>
         <div class="footer-bottom pull-right " >
 
-            <p class="ng-binding">Copyright &copy 2017 by Wohlig Transformations Pvt Ltd</p>
+            <p class="ng-binding">Copyright &copy
+
+   {{currentDate | date:'yyyy'}}
+by Wohlig Transformations Pvt Ltd</p>
         </div></div>
            </footer>
           

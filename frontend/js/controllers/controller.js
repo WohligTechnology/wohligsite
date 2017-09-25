@@ -85,6 +85,17 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
           $scope.oneAtATime = true;
 
     })
+     .controller('footerCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+        $scope.template = TemplateService.getHTML("template/footer.html");
+        TemplateService.title = "footer"; // This is the Title of the Website
+        $scope.navigation = NavigationService.getNavigation();
+          $scope.oneAtATime = true;
+            $scope.currentDate = new Date();
+            console.log("currentDate",  $scope.currentDate );
+
+    })
+
+    
     
     
     // Example API Controller
