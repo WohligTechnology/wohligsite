@@ -125,6 +125,7 @@ var model = {
             }
         })
     },
+
     getApplicantByExperience: function (data, callback) {
         Apply.find(
             {
@@ -147,7 +148,7 @@ var model = {
                     });
                 }
             }
-        })
+        });
     },
 
     saveSubmitData: function (data, callback) {
@@ -207,7 +208,7 @@ var model = {
                 emailData.current = data.current_ctc;
                 emailData.expected = data.expected_ctc;
                 emailData.resume = data.resume;
-                emailData.email = "sayali.ghule@wohlig.com";
+                emailData.email = "priyanka.satim@wohlig.com";
                 emailData.from = data.email;
                 emailData.filename = "mail2.ejs";
                 emailData.subject = "User apply Details";
@@ -238,5 +239,6 @@ var model = {
                 }
             });
     }
+    
 };
 module.exports = _.assign(module.exports, exports, model);

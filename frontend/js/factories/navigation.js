@@ -1,46 +1,38 @@
-myApp.factory('NavigationService', function () {
+var adminurl = "http://wohlig.io/api/";
+myApp.factory('NavigationService', function ($http) {
     var navigation = [{
             name: "Home",
             classis: "active",
-            anchor: "home",
-            subnav: [{
-                name: "Subnav1",
-                classis: "active",
-                anchor: "home"
-            }]
+            anchor: "wohlig_home_page",
+            subnav: []
         }, {
-            name: "About us",
+            name: "About Us",
             classis: "active",
-            anchor: "About us",
+            anchor: "about_us",
             subnav: []
         },
         {
             name: "Services",
             classis: "active",
-            anchor: "Services",
+            anchor: "services",
             subnav: []
         },
-         {
-            name: "Work Process",
-            classis: "active",
-            anchor: "Work Process",
-            subnav: []
-        },
-         {
+        
+        {
             name: "Current Openings",
             classis: "active",
             anchor: "apply",
             subnav: []
         },
-         {
+        {
             name: "Clients",
             classis: "active",
-            anchor: "Clients",
+            anchor: "client_page",
             subnav: []
         },
-        
+
         {
-            name: "Get in Touch",
+            name: "Get In Touch",
             classis: "active",
             anchor: "getintouch",
             subnav: []
@@ -50,6 +42,36 @@ myApp.factory('NavigationService', function () {
     return {
         getNavigation: function () {
             return navigation;
+        },
+
+
+
+
+        saveUser: function (formData, callback) {
+            $http({
+                url: adminurl + 'Candidate/saveMailData',
+                method: 'POST',
+                data: formData
+            }).then(callback);
+        },
+ 
+
+          submitApply: function (formData, callback) {
+            $http({
+                url: adminurl + 'Apply/saveMailData',
+                method: 'POST',
+                data: formData
+            }).then(callback);
+        },
+
+
+        apiCall: function (url, input, callback) {
+            $http({
+                url: adminUrl + url,
+                method: 'POST',
+                withCredentials: true,
+                data: input
+            }).then(callback);
         },
     };
 });

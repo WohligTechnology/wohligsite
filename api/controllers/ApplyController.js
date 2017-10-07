@@ -64,7 +64,7 @@ var controller = {
             });
         }
     },
-
+    
     saveMailData: function (req, res) {
         if (req.body) {
             Apply.saveMailData(req.body, res.callback);

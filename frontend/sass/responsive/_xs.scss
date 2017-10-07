@@ -36,10 +36,7 @@
     .btn_form {
         padding-right: 0px;
     }
-    .fa.pull-right {
-        margin-left: .3em;
-        margin-top: 4px;
-    }
+    
     .space_b {
         padding-left: 9px;
         font-size: 14px;
@@ -59,6 +56,10 @@
     .nav-tabs>li {
         padding: 0;
     }
+    .fa-plus:before {
+    content: "";
+    font-size: 20px;
+}
     .nav-tabs>li>a {
         padding: 8px 4px
     }
@@ -71,7 +72,13 @@
             padding-left: 0px!important;
         }
         font-size: 17px;
+        
     }
+    .G-button_Submit {
+    padding: 3px 16px 7px 16px;
+    color: white; 
+ background-color: #00b0c7; 
+}
     .job_d {
         font-size: 16px;
     }
@@ -82,9 +89,9 @@
         padding: 3px 13px 3px 13px;
         font-size: 12px;
     }
-    .span.ng-binding {
-        padding-left: 20px;
-        font-size: 15px;
+    .underline_text {
+        padding-left: 0px;
+        font-size: 18px;
     }
     .button_apply:hover {
         padding: 3px 13px 3px 13px;
@@ -121,11 +128,7 @@ a {
     font-size: 13px;
 }
 
-.btn {
-    padding: 0px;
-    padding-top: 11px;
-    padding-left: 11px;
-}
+
 
 .nav-tabs>li {
     padding: 0px;
@@ -135,6 +138,36 @@ a {
     width: 70px;
     margin: 0 auto;
 }
+
+navbar-default .navbar-nav > li > a {
+    color: #c9c4c4;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #777;
+}
+
+
+.image_privacy {
+    width: 100%;
+    padding-top: 53px;
+    height: 241px;
+}
+.privacy_Terms
+{
+    padding-left: 20px;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #cec9c9;
+}
+.nav > li {
+ background-color:none!important;
+}
+
+
+// .navbar-default .navbar-nav > li > a {
+//     background-color:#c9c4c4;
+// }
 .column_space13 {
     background-color: white;
     border: 1px solid lightgray;
@@ -142,6 +175,7 @@ a {
     padding-right: 0px;
     height: 50px;
 }
+
 .img-holder_12 {
     .img1 {
         width: 108px;
@@ -245,14 +279,81 @@ a {
 .footer_design {
     text-align: center;
 }
-
+.footer-bottom
+{
+    text-align: center;
+}
 .hb_menu {
     margin-top: -72px;
     margin-left: 300px;
 }
 
+
 .img_d {
     background-image: url(images/newsletter_headline1.gif);
+}
+
+.column_work {
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: #ededed;
+    height: 100px;
+}
+.fa.pull-right
+{
+    
+    margin-left: .0em;
+
+}
+.uib_tab_ig
+{
+    margin-top: 56px;
+}
+.Services_Heading1 {
+    position: absolute;
+    top: 41%;
+    margin: 0px;
+    left: 50%;
+    font-weight: bolder;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 19px;
+    color: white;
+}
+.textcontent {
+    line-height: 1.7;
+   padding-left: 15px;
+    font-weight: 600;
+}
+.text_content {
+    line-height: 1.7;
+   padding-left: 0px;
+    font-weight: 600;
+}
+.scroll_page
+{
+    height: 100px;
+    overflow-y: scroll;
+}
+.text_heading_inside {
+    color: #00b0c7;
+    padding-top: 24px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+}
+.textheadinginside
+{
+   padding-left: 0px;  
+}
+.center {
+        margin: auto;
+    width: 60%;
+  
+    padding: 10px;
+    // margin: 0px;
+    //     margin-left: 12px;
+    // width: 100%;
+    // border: 3px solid green;
 }
 
 
