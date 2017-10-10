@@ -474,8 +474,21 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         //     i++;
         //     console.log("This is a button Click");
         // };
-
-
+        $scope.clients =[
+              "img/c/TUI_Logo_tilewhite.png",
+              "img/c/coachmentor.png",
+              "img/c/6.png",
+              "img/c/11.png",
+                  "img/c/10.png",
+                   "img/c/d.png",
+              "img/c/8.png",
+                  "img/c/e.png",
+              "img/c/1.png",
+                  "img/c/icon (1).png",
+                     "img/c/ting.png",
+              "img/c/phele-kadam.png",
+            ];
+     
 
     })
 
@@ -483,6 +496,51 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         $scope.template = TemplateService.getHTML("content/client_page.html");
         TemplateService.title = "client_page"; // This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
+          $scope.clients =[
+              "img/c/TUI_Logo_tilewhite.png",
+              "img/c/coachmentor.png",
+              "img/c/6.png",
+              "img/c/11.png",
+                  "img/c/10.png",
+                   "img/c/d.png",
+              "img/c/8.png",
+                  "img/c/e.png",
+              "img/c/1.png",
+                  "img/c/icon (1).png",
+                     "img/c/ting.png",
+              "img/c/phele-kadam.png",
+              "img/c/gsource.png",
+               "img/c/s.png",
+                "img/c/alpha.png",
+                 "img/c/q.png",
+                   "img/c/clickmania.png",
+                     "img/c/EURO-FLOOR-LOGO.png",
+                        "img/c/euro-pratik.png",
+                    "img/c/gs-entertainment.png",
+                        "img/c/icon (2).png",
+                            "img/c/7.png",
+                                  "img/procreatelogo.png",
+                                   "img/c/rd-engineering.png",
+                                      "img/c/ngu.png",
+                                        "img/c/tmm.png",
+                                          "img/c/unifly LOGO.png",
+                                           "img/c/a.png",
+                                            "img/c/az_logo.png",
+                                             "img/c/Screen Shot 2017-01-19 at 5.28.43 PM copy.png",
+                                              "img/c/91streets-01.png",
+                                               "img/c/9.png",
+                                                "img/c/12.png",
+                                                  "img/c/4.png",
+                                                    "img/c/2.png",
+                                                      "img/c/h.png",
+                                                      "img/c/n.png",
+                                                      "img/c/Anima creatives.png",
+                                                        "img/c/m.png",
+                                                         "img/c/r.png",
+                                                          "img/c/o.png",
+
+
+            ];
     })
 
 
