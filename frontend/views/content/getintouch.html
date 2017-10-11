@@ -1,8 +1,8 @@
 <div class="img-wrapper">
   <div class="img_d"> <img src="img/1.jpg" class="img-responsive img_top1" alt="bimg">
   </div>
-    <div class="img_m"> <img src="img/get_in_touch.jpg" class="img-responsive img_top1" alt="bimg">
-    </div>
+  <div class="img_m"> <img src="img/get_in_touch.jpg" class="img-responsive img_top1" alt="bimg">
+  </div>
   <div class="background_name ">
 
     <h2 class="Name_title_heading"><b>GET IN TOUCH</b></h2>
@@ -12,8 +12,10 @@
 <!--img close-->
 
 
-<div class="container Details_Container">
-  <div class="row page_row">
+<div class="container">
+  <div class="Details_Container">
+  <div class="row">
+    <div class="page_row">
     <div class=" column_page1 col-md-offset-2 col-md-8 col-sm-offset-1  col-sm-10 col-xs-offset-0 col-xs-12">
       <div class="col-md-4 col-sm-5 cpl-xs-12 padding_page">
         <div class="column_main">
@@ -28,30 +30,24 @@
               <p> Sion West, Mumbai</p>
               <p> Maharashtra- 400022.</p>
             </div>
-<!--
-            <div class="enquiry_wohlig">
-              <a href="" class="fsize color:#00b0c7" target="_blank">
-                                  <i class="fa fa-google-plus plus_color" aria-hidden="true"></i></a></div>
-            <span class="email_page">Email Address</span>
-            </h5>-->
           </div>
           <!--column-->
           <div class="enquiry_details">
-            <h5 class="inq_font"><b>Inquiry Contact</b><br></h4>
-              <h6>
-                <p class="letter_space_content"> <a href="" class="fsize color-white" target="_blank">
+            <h5 class="inq_font"><b>Inquiry Contact</b><br></h5>
+            <h5>
+              <p class="letter_space_content"> <a href="" class="fsize color-white" target="_blank">
                                                  <i class="fa fa-phone"></i></a> +91 9820045678</p>
 
-             
-              
 
-                <p class="letter_space_content"> <a href="" class="color_blue">
+
+
+              <p class="letter_space_content"> <a href="" class="color_blue">
                                                         <a href="" class="fsize color-white" target="_blank">
                                                  <i class="fa fa-envelope-o"></i></a> chirag@wohlig.com
-                </p>
-          <p class="word_line">
+              </p>
+              <p class="word_line">
 
-                  <a href="" class="fsize color-white" target="_blank">
+                <a href="" class="fsize color-white" target="_blank">
                                                 <i class="fa fa-clock-o"></i></a> Mon-Fri : 11:00 to 19:00</p>
             </h5>
 
@@ -62,35 +58,35 @@
                                                         <i class="fa fa-phone"></i></a> +91 9920712123
                 </p>
                 <p>
-                 
-              
-                <p class="word_line">
-                  <a href="" class="color_blue">
+
+
+                  <p class="word_line">
+                    <a href="" class="color_blue">
                                                 <a href="" class="fsize color-white" target="_blank">
                                                 <i class="fa fa-envelope-o"></i></a> harsh@wohlig.com
 
-                </p>
-                </a>
-            
+                  </p>
+                  </a>
+
             </h5>
             <br>
           </div>
         </div>
 
       </div>
-      
+
       <!--col-->
 
 
       <div class="col-md-8 col-sm-7 col-xs-12 page_design">
         <div class="page_form">
-          <form class="form-horizontal form_h "  name="formData" role="form" ng-submit="submitUser(userData,formData)">
+          <form class="form-horizontal form_h " name="formData" role="form" ng-submit="submitUser(userData,formData)">
             <div class="form-group">
               <label class="control-label col-md-3 col-sm-3 col-xs-12" for="fullname"> Full Name</label>
               <div class="col-md-9 col-sm-9">
-                <input type="text" ng-model="userData.fullname" class="form-control" id="fullname" placeholder="Name" >
+                <input type="text" ng-model="userData.fullname" class="form-control" id="fullname" placeholder="Name">
 
-               <!--<div class="pull-right" ng-repeat="(field,value) in formData.email.$error" ng-show="formData.email.$touched">
+                <!--<div class="pull-right" ng-repeat="(field,value) in formData.email.$error" ng-show="formData.email.$touched">
                   <span class="label label-danger" ng-if="field=='required' && value">Please Enter Email id</span>
                </div>-->
               </div>
@@ -99,9 +95,9 @@
               <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Email_id">Email Id.</label>
               <div class="col-md-9 col-sm-9 col_size">
 
-                  <input type="email_id" ng-model="userData.email_id" class="form-control" id="email_id" placeholder="Email">
- 
-               <!--<div class="pull-right" ng-repeat="(field,value) in formData.email.$error" ng-show="formData.email.$touched">
+                <input type="email_id" ng-model="userData.email_id" class="form-control" id="email_id" placeholder="Email">
+
+                <!--<div class="pull-right" ng-repeat="(field,value) in formData.email.$error" ng-show="formData.email.$touched">
                   <span class="label label-danger" ng-if="field=='required' && value">Please Enter Email id</span>
                </div>-->
               </div>
@@ -110,7 +106,7 @@
             <div class="form-group">
               <label class="control-label col-md-3 col-sm-3 col-xs-12" for="contact_no">Contact No.</label>
               <div class="col-md-9 col-sm-9 col_size">
-                <input type="text" ng-model="userData.contact_no" class="form-control" id="contact_no" placeholder="Contact No" >
+                <input type="text" ng-model="userData.contact_no" class="form-control" id="contact_no" placeholder="Contact No">
                 <!--<div class="pull-right" ng-repeat="(field,value) in formData.age.$error" ng-show="formData.age.$touched">
                   <span class="label label-danger" ng-if="field=='required' && value">Please Enter Contact No</span>
                   <span class="label label-danger" ng-if="field=='required' && value">Please Enter contact No</span>
@@ -129,9 +125,9 @@
               </div>
             </div>
 
-            <div class="form-group" >
+            <div class="form-group">
               <div class="col-md-12 col-sm-12 col-xs-12 btn_form">
-                <button type="submit" value="Submit" class="pull-right btn btn-primary G-button_Submit" >Submit</button>
+                <button type="submit" value="Submit" class="pull-right btn btn-primary G-button_Submit">Submit</button>
               </div>
             </div>
           </form>
@@ -139,6 +135,10 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.424403486786!2d72.86076331468213!3d19.045069057893567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8d1dc2d4e93%3A0xaac7b2a8db110f47!2sWohlig+Technology!5e0!3m2!1sen!2sin!4v1505201272795"
               class="Frame_map" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
-          <!--map-img--> 
-        </div></div>  </div></div>
+          <!--map-img-->
+        </div>
       </div>
+      </div>
+    </div>
+  </div>
+</div>
