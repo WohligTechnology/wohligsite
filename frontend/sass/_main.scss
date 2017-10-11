@@ -513,6 +513,7 @@
             text-color: black;
             border-bottom: 1px solid;
             color: blue;
+                margin-left: -45px;
         }
     }
 
@@ -713,20 +714,37 @@
         padding: 10px 25px 10px 25px;
         color: white;
         background-color: #00b0c2;
+        border: 1px solid #00b0c2;
+        border:#00b0c2;
     }
+
+
+    .btn-small {
+  line-height: 29px;
+  width: 78px;
+  height: 29px;
+}
 
     .apply_button {
         padding: 10px 25px 10px 25px;
         color: white;
         margin-top: 20px;
+        border:1px solid #00b0c2;
         background-color: #00b0c2;
     }
-
-    .G-button_Submit:hover {
+     .apply_button {
         padding: 10px 25px 10px 25px;
         color: white;
+        margin-top: 20px;
+        border:1px solid #00b0c2;
         background-color: #00b0c2;
+        
     }
+
+
+ 
+
+    
 
     .plus_color {
         color: #00b0c2;
@@ -1579,8 +1597,10 @@ i.fa.pull-right.arrow {
 .G-button_Submit:hover {
     padding: 10px 25px 10px 25px;
     color: white;
+     border: 1px solid #00b0c2;
     background-color: #00b0c2;
 }
+
 .apply_button:hover {
     padding: 10px 25px 10px 25px;
     color: white;
