@@ -1,220 +1,454 @@
-<div class="draw_image_background">
-    <img src="img/11.jpg" alt="background_img" width="100%" height="250px">
+<div class="img-wrapper">
+    <div class="img_d">
+        <img src="img/11.jpg" alt="background_img" class="img-responsive" width="100%" height="250px">
+    </div>
+    <div class="img_m">
+        <img src="img/mobile_responsive_apply.jpg" class="img-responsive img_top1" alt="bimg">
+    </div>
 </div>
-
 
 <!--<div class="tab" style="background-color:#f6f6f6">
   <button class="tablinks" onclick="openCity(event, '1')" style="border:none;background: none;margin-left:350px"><img src="img/opening.png" ></button>
   <button class="tablinks" onclick="openCity(event, '2')" style="border:none;background: none;margin-left:170px"><img src="img/apply.png"></button>
 </div>-->
 
-<uib-tabset active="active">
-    <uib-tab>
-        <uib-tab-heading class="color_tab">
-            <img src="img/opening.png" class="img_width">
-            <div>
-               <label for="current opening" class="text_tab1">CURRENT OPENING</label>
+<uib-tabset active="tabActive" class="uib_tab_ig">
+    <uib-tab index="1">
+        <uib-tab-heading>
+            <div class="color_tab">
+                <div class="img_width">
+                    <img src="img/opening.png" class="img-responsive">
+                </div>
+                <div>
+                    <label for="current opening" class="text_tab1">CURRENT OPENINGS</label>
+                </div>
             </div>
         </uib-tab-heading>
+
+
         <div class="container">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8      col-xs-12">
+                    <div class="color-form">
+                        <div class="space_current_page">
+                            <uib-accordion close-others="oneAtATime">
+                                <div uib-accordion-group class="panel-default heading_color" is-open="status.open1">
+                                    <uib-accordion-heading>
+                                        <b class="underline_text">
+                                            Developer
+                                            <i class="pull-right fa" ng-class="{'fa-minus': status.open1, 'fa-plus': !status.open1}"></i>
+                                        </b>
+                                    </uib-accordion-heading>
 
 
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"></a></h4>
-        </div>
-        <div class="collapse1" class="panel-collapse collapse in">
-            <div class="panel-body">
-                <p> 2-5 Years</p>
-                <p>Sion,Mumbai</p>
-                <p> As per industry standards</p>
+                                    <div class="column_style">
+                                        <p>
+                                            <i class="fa fa-briefcase design_font icon_text" aria-hidden="true " class="space_b">
+                                            </i>
+                                            <b class="space_b">2-5 Years</b>
+                                        </p>
+                                        <p>
+                                            <i class="fa fa-map-marker design_font" aria-hidden="true" style="display: inline; ">
+                                                <b class="space_b1">
+                                            </i>Sion, Mumbai
+                                            </b>
+                                        </p>
 
-                Job Description 1.Work clodely with ux designers and Developers for design hand offs. 2.Get objective design feedback and
-                iterate. 3.Join a team of weird hard - workers, to build an awesome product. 4. You have a portfolio demonstrating
-                strong web and mobile interface projects. 5. You have 2-3 years of experience with responsive design. 6.
-                You have strong UI sensibilities. Desired Candidate Profile education- UG: B.Tech/B.E, BCA,B.sc PG: M.Tech,MCA
+                                        <p>
+                                            <i class="fa fa-inr design_font" aria-hidden="true" style="display: inline;">
+                                                <b class="space_b3">
+                                            </i>As per industry standards</b>
+                                        </p>
 
 
+                                        <h4 class="job_d">
+                                            <b>Job Description</b>
+                                        </h4>
+                                        <p class="paragraph_hight">1. Work closely with ux designers and Developers for design hand offs.</p>
+                                        <p class="paragraph_hight">2. Get objective design feedback and iterate.</p>
+                                        <p class="paragraph_hight">3. Join a team of weird hard - workers, to build an awesome product.</p>
+                                        <p class="paragraph_hight">4. You have a portfolio demonstrating strong web and mobile interface projects.</p>
+                                        <p class="paragraph_hight">5.You have 2-3 years of experience with responsive design.</p>
+                                        <p class="paragraph_hight">6. You have strong UI sensibilities.</p>
+                                        <h4 class="profile_p">
+                                            <b>Desired Candidate Profile</b>
+                                        </h4>
+                                        <P class="paragraph_hight">
+                                            <b>Education-</b>
+                                        </P>
+                                        <p class="paragraph_hight"> UG: B.Tech/B.E, BCA,B.sc</p>
+                                        <p class="paragraph_hight">PG: M.Tech,MCA</p>
+
+                                        <button type="Submit" value="Submit" class="btn btn-primary button_apply profile_p" ng-click="applyUser(2) ">
+                                            <b>Apply Now</b>
+                                        </button>
+                                    </div>
 
 
+                                </div>
 
+                                <div uib-accordion-group class="panel-default" is-open="status.open2">
+                                    <uib-accordion-heading>
+                                        <b class="underline_text">
+                                            Designer
+                                            <i class=" pull-right fa " ng-class="{'fa-minus': status.open2, 'fa-plus': !status.open2}"></i>
+                                        </b>
+                                    </uib-accordion-heading>
+
+
+                                    <div class="column_style">
+                                        <p>
+                                            <i class="fa fa-briefcase design_font icon_text" aria-hidden="true " class="space_b">
+                                            </i>
+                                            <b class="space_b">2-5 Years</b>
+                                        </p>
+                                        <p>
+                                            <i class="fa fa-map-marker design_font" aria-hidden="true" style="display: inline; ">
+                                                <b class="space_b1">
+                                            </i>Sion, Mumbai
+                                            </b>
+                                        </p>
+
+                                        <p>
+                                            <i class="fa fa-inr design_font" aria-hidden="true" style="display: inline;">
+                                                <b class="space_b3">
+                                            </i>As per industry standards</b>
+                                        </p>
+
+
+                                        <h4 class="job_d">
+                                            <b>Job Description</b>
+                                        </h4>
+                                        <p class="paragraph_hight">1. Work closely with ux designers and Developers for design hand offs.</p>
+                                        <p class="paragraph_hight">2. Get objective design feedback and iterate.</p>
+                                        <p class="paragraph_hight">3. Join a team of weird hard - workers, to build an awesome product.</p>
+                                        <p class="paragraph_hight">4. You have a portfolio demonstrating strong web and mobile interface projects.</p>
+                                        <p class="paragraph_hight">5.You have 2-3 years of experience with responsive design.</p>
+                                        <p class="paragraph_hight">6. You have strong UI sensibilities.</p>
+                                        <h4 class="profile_p">
+                                            <b>Desired Candidate Profile</b>
+                                        </h4>
+                                        <P class="paragraph_hight">
+                                            <b>Education-</b>
+                                        </P>
+                                        <p class="paragraph_hight"> UG: B.Tech/B.E, BCA,B.sc</p>
+                                        <p class="paragraph_hight">PG: M.Tech,MCA</p>
+
+                                        <button type="button" class="btn btn-primary button_apply profile_p" ng-click="applyUser(2)">
+                                            <b>Apply Now</b>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                                <div uib-accordion-group class="panel-default" is-open="status.open3">
+                                    <uib-accordion-heading>
+                                        <b class="underline_text">
+                                            Tester
+                                            <i class=" pull-right fa " ng-class="{'fa-minus': status.open2, 'fa-plus': !status.open2}"></i>
+                                        </b>
+                                    </uib-accordion-heading>
+
+
+                                    <div class="column_style">
+                                        <p>
+                                            <i class="fa fa-briefcase design_font icon_text" aria-hidden="true " class="space_b">
+                                            </i>
+                                            <b class="space_b">2-5 Years</b>
+                                        </p>
+                                        <p>
+                                            <i class="fa fa-map-marker design_font" aria-hidden="true" style="display: inline; ">
+                                                <b class="space_b1">
+                                            </i>Sion, Mumbai
+                                            </b>
+                                        </p>
+
+                                        <p>
+                                            <i class="fa fa-inr design_font" aria-hidden="true" style="display: inline;">
+                                                <b class="space_b3">
+                                            </i>As per industry standards</b>
+                                        </p>
+
+
+                                        <h4 class="job_d">
+                                            <b>Job Description</b>
+                                        </h4>
+                                        <p class="paragraph_hight">1. Work closely with ux designers and Developers for design hand offs.</p>
+                                        <p class="paragraph_hight">2. Get objective design feedback and iterate.</p>
+                                        <p class="paragraph_hight">3. Join a team of weird hard - workers, to build an awesome product.</p>
+                                        <p class="paragraph_hight">4. You have a portfolio demonstrating strong web and mobile interface projects.</p>
+                                        <p class="paragraph_hight">5.You have 2-3 years of experience with responsive design.</p>
+                                        <p class="paragraph_hight">6. You have strong UI sensibilities.</p>
+                                        <h4 class="profile_p">
+                                            <b>Desired Candidate Profile</b>
+                                        </h4>
+                                        <P class="paragraph_hight">
+                                            <b>Education-</b>
+                                        </P>
+                                        <p class="paragraph_hight"> UG: B.Tech/B.E, BCA,B.sc</p>
+                                        <p class="paragraph_hight">PG: M.Tech,MCA</p>
+
+                                        <button type="button" value="Submit" class="btn btn-primary button_apply profile_p" ng-click="applyUser(2)">
+                                            <b>Apply Now</b>
+                                        </button>
+                                    </div>
+
+
+                                </div>
+
+                            </uib-accordion>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
 
-        </div>
 
 
 
     </uib-tab>
-    <uib-tab>
+    <!--end designer-->
+
+
+
+    <uib-tab index="2">
         <uib-tab-heading>
-            <img src="img/apply.png" class="img_width">
+            <div class="img_width">
+                <img src="img/apply.png" class="img-responsive">
+            </div>
             <div>
-            <label for="apply"  class="text_tab2">APPLY NOW</label>
+                <label for="apply" class="text_tab2">APPLY NOW</label>
             </div>
 
         </uib-tab-heading>
+
         <div class="container form_container">
             <div class="row">
-                <div class="col-md-offset-2 col-md-8">
-            <form>
-                <div class="row padd_top">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label class="control-label" for="aboutyou">About you</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <!--starting of first form-->
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <input type="text" class="form-control input-md" id="firstname" placeholder="First Name">
-                        </div>
-                        <!--form-group-->
+                <div class="col-md-offset-2 col-md-8 col-sm-offset-2  col-sm-8 col-xs-offset-1 col-xs-10">
 
-                    </div>
-                    <div class="col-md-6">
-
-                        <input type="text" class="form-control" id="lastname" placeholder="Last Name">
-
-
-                    </div>
-                </div>
-
-
-                <div class="row addi_inf">
-                    <!--starting of first form-->
-                    <div class="col-md-6">
-
-                        <div class="form-group">
-                            <input type="email" class="form-control input-md" id="email" placeholder="Email">
-                        </div>
-                        <!--form-group-->
-                    </div>
-
-                    <div class="col-md-6">
-
-                        <input type="Phone Number" class="form-control" id="phonenumber" placeholder="Phone Number">
-
-
-                    </div>
-                    <!--ending of first form-->
-
-
-
-
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label class="control-label" for="additional_info" class="addi_inf_padding">Addition Information</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <!--starting of first form-->
-                    <div class="col-md-12">
-
-                        <div class="form-group">
-
-                            <select class="form-control" id="sel1" placeholder="">
-    
-                     <option value="" disabled selected hidden>Designation</option>
-                        <option>Designer</option>
-                        <option>Developer</option>
-                        <option>Tester</option>
-                
-                        </select>
-
-                        </div>
-
-
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <!--starting of first form-->
-                    <div class="col-md-6">
-
-                        <div class="form-group">
-                            <select class="form-control" id="sel1">
-          
-
-                                    <option value="" disabled selected hidden aria-placeholder="Years of Experience">Years of Experience</option>
-                                    <option>Fresher</option>
-                                    <option>less than 1 year</option>
-                                    <option>1-2 years</option>
-                                    <option>2-3 years</option>
-                                    <option>3-4 years</option>
-                                    <option>4-5 years</option>
-                                    <option>more than 5 years</option>
-                                </select>
-                        </div>
-                        <!--form-group-->
-
-                    </div>
-                    <div class="col-md-6">
-
-                        <input type="text" class="form-control" id="noticeperiod" placeholder="Notice Period">
-
-
-                    </div>
-                </div>
-
-                <div class="row">
-                    <!--starting of first form-->
-                    <div class="col-md-6">
-
-                        <div class="form-group">
-                            <input type="text" class="form-control input-md" id="currentctc" placeholder="Current CTC ">
-                        </div>
-                        <!--form-group-->
-
-                    </div>
-                    <div class="col-md-6">
-
-                        <input type="text" class="form-control" id="expectedctc" placeholder="Expected CTC">
-
-
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <!--starting of first form-->
-                    <div class="form-group">
-                        <div class="col-md-12">
-                      <div class="column_space13">
-                                <label for="fullname" class="col-md-3  control-label color_text_upload">Upload Resume/cv:</label>
-                                
-                                    <div class="form-group">
-                                        <div class="attach">
-                                            <upload-image ng-model="formData.qualificationCertificate" no-view></upload-image>
-                                    
-                                    
+                    <form name="formData" role="form">
+                        <div class="row padd_top">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group float-label">
+                                    <label class="control-label" for="aboutyou">About You</label>
                                 </div>
-                      </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!--starting of first form-->
+                            <div class="col-md-6 col-sm-6 col-xs-12 ">
+                                <div class="form-group float-label">
+                                    <input type="text" ng-model="userData.firstname" class="form-control" id="firstname" placeholder="First Name" required name="firstname">
+                                    <div class="pull-right" ng-repeat="(field,value) in formData.firstname.$error" ng-show="formData.firstname.$touched">
+                                        <span class="label label-danger" ng-if="field=='required' && value">Please Enter First Name </span>
+                                    </div>
+                                </div>
+                                <!--form-group-->
+
+                            </div>
+
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form_text">
+
+
+
+                                    <input type="text" ng-model="userData.lastname" class="form-control" id="lastname" placeholder="Last Name" required name="lastname">
+                                    <div class="pull-right" ng-repeat="(field,value) in formData.lastname.$error" ng-show="formData.lastname.$touched">
+                                        <span class="label label-danger" ng-if="field=='required' && value">Please Enter Last Name </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row addi_inf">
+                            <!--starting of first form-->
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group float-label">
+                                    <input type="email" ng-model="userData.email" class="form-control" id="email" placeholder="Email" required name="email">
+                                    <div class="pull-right" ng-repeat="(field,value) in formData.email.$error" ng-show="formData.email.$touched">
+                                        <span class="label label-danger" ng-if="field=='required' && value">Please Enter Email Id</span>
+                                    </div>
+                                </div>
+                                <!--form-group-->
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 ">
+
+
+                                <input type="text" ng-model="userData.mobile" class="form-control" id="mobile" placeholder="Phone Number" required name="mobile">
+                                <div class="pull-right" ng-repeat="(field,value) in formData.mobile.$error" ng-show="formData.mobile.$touched">
+                                    <span class="label label-danger" ng-if="field=='required' && value">Please Enter phone Number</span>
+                                </div>
+
+                            </div>
+                            <!--ending of first form-->
+
+
+
+                        </div>
+
+
+
+
+                        <div class="row ">
+                            <div class="col-md-12 col-sm-6 col-xs-12">
+                                <div class="form-group float-label">
+                                    <label class="control-label" for="additional_info" class="addi_inf_padding">Addition Information</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <!--starting of first form-->
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+
+                                <div class="form-group float-label">
+
+
+                                    <select class="form-control year_text_color" id="sel1" placeholder="" class="form-control" name="Designation" ng-model="userData.designation">
+
+                                        <option value="" disabled selected hidden placeholder="Designation" required>Designation</option>
+                                        <option class="option_color">Designer</option>
+                                        <option class="option_color">Developer</option>
+                                        <option class="option_color">Tester</option>
+                                    </select>
+
+                                </div>
 
 
                             </div>
                         </div>
 
 
-                    </div>
+                        <div class="row">
+                            <!--starting of first form-->
+                            <div class="col-md-6 col-sm-6  col-xs-12">
+
+                                <div class="form-group float-label">
+                                    <select class="form-control year_text_color" id="sel1" placeholder="" class="form-control" name="Years of Experience" ng-model="userData.experience">
+                                        <option value="" disabled selected hidden placeholder="Years of Experience" required>Years of Experience</option>
+                                        <option class="option_color">Fresher</option>
+                                        <option class="option_color">less than 1 year</option>
+                                        <option class="option_color">1-2 years</option>
+                                        <option class="option_color">2-3 years</option>
+                                        <option class="option_color">3-4 years</option>
+                                        <option class="option_color">4-5 years</option>
+                                        <option class="option_color">more than 5 years</option>
+                                    </select>
+                                </div>
+                                <!--form-group-->
+
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12 form_text">
+
+                                <input type="notice_period" ng-model="userData.notice_period" class="form-control" id="notice_period" placeholder="Notice Period"
+                                    required name="notice_period">
+
+                                <div class="pull-right" ng-repeat="(field,value) in formData.notice_period.$error" ng-show="formData.notice_period.$touched">
+                                    <span class="label label-danger" ng-if="field=='required' && value">Please Enter Notice Period</span>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <!--starting of first form-->
+                            <div class="col-md-6 col-sm-6">
+
+                                <div class="form-group">
+
+                                    <input type="current_ctc" ng-model="userData.current_ctc" class="form-control" id="current_ctc" placeholder="Current CTC"
+                                        required name="current_ctc">
+
+                                    <div class="pull-right" ng-repeat="(field,value) in formData.mobile.$error" ng-show="formData.current_ctc.$touched">
+                                        <span class="label label-danger" ng-if="field=='required' && value">Please Enter Current CTC</span>
+                                    </div>
+                                </div>
+                                <!--form-group-->
+
+                            </div>
+
+                            <div class="col-md-6 col-sm-6">
+                                <div class=" form_text">
+
+                                    <input type="expected_ctc" ng-model="userData.expected_ctc" class="form-control" id="expected_ctc" placeholder="Expected CTC"
+                                        required name="expected_ctc">
+
+                                    <div class="pull-right" ng-repeat="(field,value) in formData.expected_ctc.$error" ng-show="formData.expected_ctc.$touched">
+                                        <span class="label label-danger" ng-if="field=='required' && value">Please Enter Expected CTC</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
 
 
-                </div>
+                        <div class="row">
+                            <!--starting of first form-->
+                            <div class="form-group row_padding">
+                                <div class="col-md-12 col-sm-12 col-xs-12 form_text">
+                                    <div class="column_space13">
+                                        <label for="upload_cv" class="col-md-3 col-xs-5 col-sm-4 control-label  color_text_upload">Upload Resume:</label>
+                                        <i class="pull-right fa fa-check color_fa" aria-hidden="true"></i>
+
+                                        <div class="attach">
+                                            <upload-image ng-model="userData.qualificationCertificate" no-view></upload-image>
 
 
-                <div class="row padding_buttom">
-                    <div class="col-md-12 text-center">
-                        <input type="submit" class="btn btn-default button_submit">
-                    </div>
-                </div>
-            </form>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="row padding_buttom">
+                            <div class="col-md-12 col-sm-12 col-xs-12 button-center">
+                                <button type="Submit" value="Submit" class="pull-middle btn btn-primary apply_button" ng-click="submitOnApply(userData,formData)">Submit</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
+
     </uib-tab>
 </uib-tabset>
+
+<!--<ul class="nav nav-tabs" ng-class="{'nav-stacked': vertical, 'nav-justified': justified}" ng-transclude="">
+    <li ng-class="[{active: active, disabled: disabled}, classes]" class="uib-tab nav-item ng-scope ng-isolate-scope active" index="1">
+  <a href="" ng-click="select($event)" class="nav-link ng-binding" uib-tab-heading-transclude=""><uib-tab-heading class="color_tab ng-scope">
+            <div class="img_width">
+                <img src="img/opening.png" class="img-responsive doneLoading">
+            </div>
+            <div>
+                <label for="current opening" class="text_tab1">CURRENT OPENINGS</label>
+            </div>
+        </uib-tab-heading></a>
+</li>-->
+<!--end designer-->
+
+<!--<li ng-class="[{active: active, disabled: disabled}, classes]" class="uib-tab nav-item ng-scope ng-isolate-scope" index="2">
+  <a href="" ng-click="select($event)" class="nav-link ng-binding" uib-tab-heading-transclude=""><uib-tab-heading class="ng-scope">
+            <div class="img_width">
+                <img src="img/apply.png" class="img-responsive doneLoading">
+            </div>
+            <div>
+                <label for="apply" class="text_tab2">APPLY NOW</label>
+            </div>
+
+        </uib-tab-heading></a>
+</li>
+</ul>-->

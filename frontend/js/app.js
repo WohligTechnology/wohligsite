@@ -41,13 +41,56 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'GetInTouchCtrl'
         })
+
+        .state('privacy_policy', {
+            url: "/privacy_policy",
+            templateUrl: tempateURL,
+            controller: 'PrivacyPolicyCtrl'
+        })
+
+        .state('Terms_condition', {
+            url: "/Terms_condition",
+            templateUrl: tempateURL,
+            controller: 'Terms_conditionCtrl'
+        })
+
+
+         .state('grid12', {
+            url: "/grid12",
+            templateUrl: tempateURL,
+            controller: 'GridCtrl'
+        })
+        .state('client_page', {
+            url: "/client_page",
+            templateUrl: tempateURL,
+            controller: 'Client_pageCtrl'
+        })
+
+        .state('wohlig_home_page', {
+            url: "/wohlig_home_page",
+            templateUrl: tempateURL,
+            controller: 'Wohlig_home_pageCtrl'
+        })
+
         
          .state('apply', {
             url: "/apply",
             templateUrl: tempateURL,
             controller: 'Applyctrl'
-        });
+        })
+        
+          .state('services', {
+            url: "/services",
+            templateUrl: tempateURL,
+            controller: 'servicesCtrl'
+        })
+        
 
+          .state('about_us', {
+            url: "/about_us",
+            templateUrl: tempateURL,
+            controller: 'About_usCtrl'
+        })
         
     $urlRouterProvider.otherwise("/");
     $locationProvider.html5Mode(isproduction);
