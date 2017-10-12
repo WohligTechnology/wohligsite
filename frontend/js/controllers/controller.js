@@ -497,7 +497,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         TemplateService.title = "client_page"; // This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
         $scope.clients = [
-            "img/c/TUI_Logo_tilewhite.png",
+            "img/70 tui.png",
             "img/c/coachmentor.png",
             "img/c/6.png",
             "img/c/11.png",
