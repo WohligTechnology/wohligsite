@@ -10253,6 +10253,9 @@ flex-direction-nav .flex-prev {
   font-weight: 400;
   font-size: 15px; }
 
+.nav-link:hover {
+  padding-top: 12px; }
+
 .textclient {
   color: #60a5d4;
   margin-left: 198px;
