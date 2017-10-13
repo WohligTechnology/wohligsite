@@ -28,12 +28,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         TemplateService.title = "Form"; //This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
         $scope.formSubmitted = false;
-        // $scope.data = {
-        //     name: "Chintan",
-        //     "age": 20,
-        //     "email": "chinyan@wohlig.com",
-        //     "query": "query"
-        // };
+
         $scope.submitForm = function (data) {
             console.log("This is it");
             return new Promise(function (callback) {
@@ -45,40 +40,8 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
     })
     .controller('About_usCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
         $scope.template = TemplateService.getHTML("content/about_us.html");
-        TemplateService.title = "about_us"; // This is the Title of the Website
+        TemplateService.title = "About Us";
         $scope.navigation = NavigationService.getNavigation();
-
-        // $scope.testslide = [{
-        //             name: "Lorem Ipsum",
-        //             desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-        //         }, {
-        //             name: "Lorem Phirse",
-        //             desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-        //         }];
-
-        //       $scope.detail = [    
-        // {    
-        //                  "Title": "Customer Analytics",
-        //                  "Description": "Wohlig Transformations helped a bank to extensively cross sell its new products into all existing customers by leveraging customer analytics backed by Qlik. We have extracted information from all the existing data silos, identified a comprehensive list of KPIs and created a cross sell / up sell modelling based on customer segmentation. Customer-Analytics-Exponentia-DataLabs"
-        //                 },  
-
-        //                 {
-        //               "text":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
-        //           },
-        //             {
-        //               "text":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
-        //           }
-
-
-
-        //         //    'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
-        //         //     'http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg',
-
-        //     ];
-
-
-
-
 
         $scope.testslide = [{
                 name: "Lorem Ipsum",
@@ -101,25 +64,6 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
 
 
 
-    //  $scope.mySlides = [
-
-    //         ];
-
-    //         var abc = _.times(100, function (n) {
-    //             return n;
-    //         });
-
-    //         var i = 0;
-    //         $scope.buttonClick = function () {
-    //             i++;
-    //             console.log("This is a button Click");
-    //         };
-    //     var $flexslider = $('.flexslider');
-    // $flexslider.flexslider({
-    //   animation: "slide",
-    //   manualControls: ".flex-control-nav li",
-    //   useCSS: false /* Chrome fix*/
-    //     })
 
 
     .controller('GridCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
@@ -141,6 +85,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         TemplateService.title = "getintouch"; // This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
 
+        // Submit user function
         $scope.submitUser = function (userData, formData) {
             console.log("hiii")
             console.log(userData)
@@ -148,7 +93,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
                 if (formData.$valid == true) {
                     NavigationService.saveUser(userData, function (data) {
                         if (data.data.value) {
-                            console.log("hhhh")
+                            console.log("Data Save")
                         }
                         console.log(data)
                     });
@@ -162,110 +107,8 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         TemplateService.title = "services"; // This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
 
-        // $scope.allRecord = [
-        //     {
-        //         id: 1,
-        //         heading: "International Resource Center",
-        //         activeTab: false,
-
-        //     },{
-        //         id: 2,
-        //         heading: "Business Intelligence",
-
-        //         activeTab: false,
-
-        //         records: [{
-        //                 "img": "img/2.jpg",
-        //                 "Title": "",
-        //                 "Description": ""
-        //             }, {
-        //                 "img": "img/3.jpg",
-        //                 "Title": "Customer Analytics",
-        //                 "Description": "Wohlig Transformations helped a bank to extensively cross sell its new products into all existing customers by leveraging customer analytics backed by Qlik. We have extracted information from all the existing data silos, identified a comprehensive list of KPIs and created a cross sell / up sell modelling based on customer segmentation. Customer-Analytics-Exponentia-DataLabs"
-        //             },
-        //             {
-        //                 "img": "img/3rd_img.jpg",
-        //                 "Title": "Text Analytics",
-        //                 "Description": "A large retailer in UK had millions of unstructured records of customer feedback data.Wohlig Transformations developed a text analytics engine and helped the client to visualize report directly from the text analytics engine. We analysed the data fed into Qlik and have done KPI Analysis in Qlik to deliver actionable and meaningful insights. Text-Analytics-Exponentia-DataLabs"
-        //             },
-        //             {
-        //                 "img": "img/4th_img.jpg",
-        //                 "Title": "Predictive Analytics",
-        //                 "Description": "Wohlig Transformations helped this ecommerce company to increase the lead conversion rates even with the limited ground staff and an intense competitive landscape. We used all proprietary analytics models to customize the propensity to purchase model and integrated this with the Qlik dashboards. This helped the sales team to target customer who displayed the high probability rate to purchase. Predictive-Analytics-Exponentia-DataLabs-e1464762980172"
-        //             },
-        //             {
-        //                 "img": "img/6th.jpg",
-        //                 "Title": "Business Turnaround Analysis",
-        //                 "Description": "Wohlig Transformations helped a large hospital to turnaround its business whose revenues and patient footfall were dropping rapidly. We identified the root cause of the problem based on the single window view BI dashboard built on Qlik. The scenario analysis helped us to identify the most significant drivers and address them for quick business turnaround."
-        //             }]
-        //     },
-
-        //     {
-        //         id: 3,
-        //         heading: "Analytics",
-        //         activeTab: false,
-
-        //     },
-
-        //     {
-        //         id: 4,
-        //         heading: "Enterprise Mobility",
-        //         activeTab: false,
 
 
-        //     },
-        //     {
-
-        //         id: 5,
-        //         heading: "Testing & QA",
-        //         activeTab: false,
-
-
-
-        //     },
-        //     {
-        //         id: 6,
-        //         heading: "Application Development & Maintenance",
-        //         activeTab: false,
-
-        //     },
-        //     {
-        //         id: 7,
-        //         heading: "Cloud",
-        //         activeTab: false,
-        //     },
-        //       {
-        //         id: 8,
-        //         heading: "Technology Consulting",
-        //         activeTab: false,
-        //     },
-        //       {
-        //         id: 9,
-        //         heading: "IT Infrastructure Services",
-        //         activeTab: false,
-        //     }
-
-
-        // ];
-
-        // $scope.showData = function (id, index) {
-
-        //     _.each($scope.allRecord, function (n) {
-        //         n.activeTab = false;
-        //     })
-
-        //     $scope.services = _.find($scope.allRecord, function (o) {
-        //         return o.id === id;
-        //     });
-        //     console.log($scope.services, "$scope.services");
-        //     $scope.services.activeTab = true;
-
-
-        // }
-
-
-
-        // $scope.showData(1);
         $scope.allRecord = {
             id: 2,
             heading: "Business Intelligence",
@@ -455,25 +298,9 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
 
     .controller('Wohlig_home_pageCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
         $scope.template = TemplateService.getHTML("content/wohlig_home_page.html");
-        TemplateService.title = "wohlig_home_page"; // This is the Title of the Website
+        TemplateService.title = "Welcome to wohlig"; // This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
-        // $scope.mySlides = [
-        //     'img/download.jpg',
-        //     'img/b.png',
-        //     'img/bulb.jpg',
-        //     'img/c.png',
-        //     'img/d.png',
-        //     'img/k.png',
-        // ];
-        // var abc = _.times(100, function (n) {
-        //     return n;
-        // });
 
-        // var i = 0;
-        // $scope.buttonClick = function () {
-        //     i++;
-        //     console.log("This is a button Click");
-        // };
         $scope.clients = [
             "img/c/TUI_Logo_tilewhite.png",
             "img/c/coachmentor.png",
@@ -551,19 +378,6 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         $scope.oneAtATime = true;
         $scope.tabActive = 1;
 
-        // $scope.userData={};
-
-        //     $scope.submitOnApply = function (data) {
-        //     $scope.userData=data;
-        //     $scope.url = "Apply/saveMailData";
-        //     NavigationService.apiCall($scope.url, $scope.userData, function (data) {
-        //         console.log("data.value", data);
-        //          console.log("hii");
-
-        //     });
-        // };
-        // if ( document.getElementsByName('Designation').value == 'blank' )
-        //     alert('Select something !');
 
 
 
