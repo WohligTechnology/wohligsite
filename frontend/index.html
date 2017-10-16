@@ -12,8 +12,8 @@
     <meta name="robots" content="noindex">
     <meta name="googlebot" content="noindex">
     <link rel="shortcut icon" href="img/favicon.ico" />
-
-    <title ng-bind="'Wohlig Transformations | '+template.title"></title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title ng-bind="'wohlig Transformation| '+template.title"></title>
 
     <!--[if IE]> <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script> <![endif]-->
     <!--[if IE]> <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script> <![endif]-->
@@ -24,6 +24,7 @@
 
 
     <link rel="stylesheet" type="text/css" href="css/import.css" />
+    <link rel="stylesheet" href="img/animate.css">
 
     <script>
         var adminurl = "http://wohlig.io/api/";
@@ -44,6 +45,8 @@
     <script src="bower_components/fancybox/dist/jquery.fancybox.js"></script>
 
     <script src="bower_components/smart-app-banner/smart-app-banner.js"></script>
+
+    <script src="bower_components/moment/min/moment.min.js"></script>
 
     <script src="bower_components/moment/min/moment.min.js"></script>
 
@@ -98,12 +101,9 @@
     <script src="frontend/js/controllers/language-controller.js"></script>
 
     <script src="js/wow.min.js"></script>
-
-
-
-    <!-- <script src="js/wow.min.js"></script> -->
-
-
+    <script>
+        new WOW().init();
+    </script>
 
 </body>
 

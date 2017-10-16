@@ -9810,6 +9810,23 @@ span.ng-binding {
 .color-form {
   box-shadow: 0px 1px 9px -4px; }
 
+.text_color1 {
+  font-weight: 300;
+  text-align-last: center; }
+
+.text_color2 {
+  font-weight: 300; }
+
+.text_color3 {
+  font-weight: 300; }
+
+.text_color4 {
+  font-weight: 300;
+  text-align-last: center; }
+
+.Text_wbi {
+  text-align: center; }
+
 .accordion-toggle a:hover,
 a:focus {
   color: none;
@@ -10220,7 +10237,8 @@ flex-direction-nav .flex-prev {
 .text_color {
   color: dimgrey;
   text-align: justify;
-  text-align-last: left; }
+  text-align-last: left;
+  font-weight: 300; }
 
 .flex-direction-nav .flex-prev {
   left: 121px !important; }
@@ -10569,7 +10587,7 @@ hr:after {
 .border_ctext {
   border-bottom: 3px solid #00b0c2; }
 
-.gradient_home {
+.gradientHome {
   height: calc(100vh);
   overflow: hidden;
   position: relative; }
@@ -10596,7 +10614,7 @@ video#bgvid {
   top: 80px;
   color: #fff; }
 
-.igradient {
+.iGradient {
   position: absolute;
   top: 0;
   right: 0;
@@ -10632,17 +10650,17 @@ video#bgvid {
 
 .textabt5 {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-60%, -50%);
+          transform: translate(-60%, -50%);
   font-size: 40px;
   color: white;
   margin: 0px;
   display: inline; }
 
 .Text_wbi5 {
-  font-size: 40px; }
+  font-size: 48px; }
 
 .textabt3 {
   position: absolute;
