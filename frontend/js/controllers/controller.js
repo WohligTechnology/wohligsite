@@ -29,6 +29,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         $scope.navigation = NavigationService.getNavigation();
         $scope.formSubmitted = false;
 
+        //content of about us arrow
         $scope.submitForm = function (data) {
             console.log("This is it");
             return new Promise(function (callback) {
@@ -85,7 +86,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         TemplateService.title = "getintouch"; // This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
 
-        // Submit user function
+        // Submit data function
         $scope.submitUser = function (userData, formData) {
             console.log("hiii")
             console.log(userData)
@@ -108,7 +109,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         $scope.navigation = NavigationService.getNavigation();
 
 
-
+        //business page content
         $scope.allRecord = {
             id: 2,
             heading: "Business Intelligence",
@@ -300,7 +301,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         $scope.template = TemplateService.getHTML("content/wohlig_home_page.html");
         TemplateService.title = "Welcome to wohlig"; // This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
-
+        //images of clients in home page
         $scope.clients = [
             "img/c/TUI_Logo_tilewhite.png",
             "img/c/coachmentor.png",
@@ -323,6 +324,8 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         $scope.template = TemplateService.getHTML("content/client_page.html");
         TemplateService.title = "client_page"; // This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
+        //images of clients in client page
+
         $scope.clients = [
             "img/70 tui.png",
             "img/c/coachmentor.png",
@@ -380,7 +383,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
 
 
 
-
+        //apply button
         $scope.submitOnApply = function (userData, formData) {
             console.log("hiii")
             console.log(userData)
@@ -388,7 +391,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
                 if (formData.$valid == true) {
                     NavigationService.submitApply(userData, function (data) {
                         if (data.data.value) {
-                            console.log("hhoo")
+                            console.log("apply")
                         }
                         console.log(data)
                     });
