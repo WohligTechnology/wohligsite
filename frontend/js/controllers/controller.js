@@ -39,7 +39,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             });
         };
     })
-    .controller('About_usCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+    .controller('AboutUsCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
         $scope.template = TemplateService.getHTML("content/about_us.html");
         TemplateService.title = "About Us";
         $scope.navigation = NavigationService.getNavigation();
@@ -75,7 +75,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
 
     .controller('servicesCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
         $scope.template = TemplateService.getHTML("content/services.html");
-        TemplateService.title = "services"; // This is the Title of the Website
+        TemplateService.title = "Services"; // This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
     })
 
@@ -83,7 +83,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
 
     .controller('GetInTouchCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
         $scope.template = TemplateService.getHTML("content/getintouch.html");
-        TemplateService.title = "getintouch"; // This is the Title of the Website
+        TemplateService.title = "Get In Touch"; // This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
 
         // Submit data function
@@ -103,9 +103,9 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         }
     })
 
-    .controller('servicesCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+    .controller('ServicesCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
         $scope.template = TemplateService.getHTML("content/services.html");
-        TemplateService.title = "services"; // This is the Title of the Website
+        TemplateService.title = "Services"; // This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
 
 
@@ -297,9 +297,9 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         $scope.navigation = NavigationService.getNavigation();
     })
 
-    .controller('Wohlig_home_pageCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+    .controller('WohligHomePageCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
         $scope.template = TemplateService.getHTML("content/wohlig_home_page.html");
-        TemplateService.title = "Welcome to wohlig"; // This is the Title of the Website
+        TemplateService.title = "Welcome to wohlig Transformation"; // This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
         //images of clients in home page
         $scope.clients = [
@@ -320,9 +320,9 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
 
     })
 
-    .controller('Client_pageCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+    .controller('ClientPageCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
         $scope.template = TemplateService.getHTML("content/client_page.html");
-        TemplateService.title = "client_page"; // This is the Title of the Website
+        TemplateService.title = "Client Page"; // This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
         //images of clients in client page
 
@@ -376,7 +376,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
 
     .controller('Applyctrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
         $scope.template = TemplateService.getHTML("content/apply.html");
-        TemplateService.title = "apply"; // This is the Title of the Website
+        TemplateService.title = "Apply"; // This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
         $scope.oneAtATime = true;
         $scope.tabActive = 1;

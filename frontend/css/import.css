@@ -9590,7 +9590,7 @@ a {
   float: none; }
 
 .img-wrapper {
-  top: 51px;
+  top: 56px;
   margin-top: -3px; }
 
 .text_tab1 {
@@ -10534,7 +10534,7 @@ i.fa.pull-right.arrow {
   padding: 10px 25px 10px 25px;
   color: white;
   border: 1px solid #00b0c2;
-  background-color: #00b0c2; }
+  background-color: #0ec2c0; }
 
 .apply_button:hover {
   padding: 10px 25px 10px 25px;
@@ -10640,13 +10640,6 @@ video#bgvid {
   top: 80px;
   color: #fff; }
 
-.iGradient {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0; }
-
 .contentgradient {
   position: relative; }
 
@@ -10714,6 +10707,13 @@ video#bgvid {
 
 .Textabtus123 {
   font-size: 60px; }
+
+.iGradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0; }
 
 #fancybox-loading,
 .fancybox-close,

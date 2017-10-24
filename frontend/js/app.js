@@ -55,7 +55,7 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
         })
 
 
-         .state('grid12', {
+        .state('grid12', {
             url: "/grid12",
             templateUrl: tempateURL,
             controller: 'GridCtrl'
@@ -63,35 +63,35 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
         .state('client_page', {
             url: "/client_page",
             templateUrl: tempateURL,
-            controller: 'Client_pageCtrl'
+            controller: 'ClientPageCtrl'
         })
 
         .state('wohlig_home_page', {
             url: "/wohlig_home_page",
             templateUrl: tempateURL,
-            controller: 'Wohlig_home_pageCtrl'
+            controller: 'WohligHomePageCtrl'
         })
 
-        
-         .state('apply', {
+
+        .state('apply', {
             url: "/apply",
             templateUrl: tempateURL,
             controller: 'Applyctrl'
         })
-        
-          .state('services', {
+
+        .state('services', {
             url: "/services",
             templateUrl: tempateURL,
-            controller: 'servicesCtrl'
+            controller: 'ServicesCtrl'
         })
-        
 
-          .state('about_us', {
+
+        .state('about_us', {
             url: "/about_us",
             templateUrl: tempateURL,
-            controller: 'About_usCtrl'
+            controller: 'AboutUsCtrl'
         })
-        
+
     $urlRouterProvider.otherwise("/");
     $locationProvider.html5Mode(isproduction);
 });
